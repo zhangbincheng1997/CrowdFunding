@@ -31,8 +31,6 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
-	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="http://repo1.maven.org/maven2/archetype-catalog.xml" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -51,7 +49,6 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="F:\HelloWorld\Jee\crowdfunding"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -64,10 +61,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.redhat.crowdfunding"/>
 		</list>
 		<list key="groupId">
+			<item value="com.redhat"/>
 		</list>
 		<list key="artifactId">
+			<item value="crowdfunding"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

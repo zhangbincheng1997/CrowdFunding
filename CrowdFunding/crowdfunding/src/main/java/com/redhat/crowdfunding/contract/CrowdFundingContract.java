@@ -90,9 +90,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 		 * List<TypeReference<?>> nonIndexedParameters 不含索引的参数
 		 */
 		Event event = new Event("CrowdEnd", Arrays.<TypeReference<?>>asList(),
-				Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {
-				}, new TypeReference<Uint256>() {
-				}));
+				Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {}, new TypeReference<Uint256>() {}));
 		return extractEventParameters(event, future).get(0);
 	}
 }

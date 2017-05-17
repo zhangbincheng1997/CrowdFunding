@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.web3j.protocol.core.methods.response.TransactionReceipt"/>
-<fullyQualifiedTypeName name="java.math.BigInteger"/>
-<fullyQualifiedTypeName name="java.util.concurrent.Future"/>
-<fullyQualifiedTypeName name="org.web3j.abi.EventValues"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

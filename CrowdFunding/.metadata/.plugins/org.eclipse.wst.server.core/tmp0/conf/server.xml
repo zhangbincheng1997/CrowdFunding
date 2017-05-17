@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="F:\HelloWorld\Jee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\HelloWorld\Jee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\crowdfunding" path="/crowdfunding" reloadable="true" source="org.eclipse.jst.j2ee.server:crowdfunding"/></Host>
+      <Context docBase="F:\HelloWorld\JWeb\CrowdFunding\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\HelloWorld\JWeb\CrowdFunding\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\crowdfunding" path="/crowdfunding" reloadable="true" source="org.eclipse.jst.j2ee.server:crowdfunding"/></Host>
     </Engine>
   </Service>
 </Server>
