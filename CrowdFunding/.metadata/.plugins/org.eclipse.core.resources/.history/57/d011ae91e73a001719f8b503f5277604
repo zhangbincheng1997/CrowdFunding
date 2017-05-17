@@ -1,8 +1,0 @@
-package com.redhat.crowdfunding.contract;
-
-/**
- * @author littleredhat
- */
-public class CrowdFundingInterface {
-
-}

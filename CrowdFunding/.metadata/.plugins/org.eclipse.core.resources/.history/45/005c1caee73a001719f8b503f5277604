@@ -1,8 +1,0 @@
-package com.redhat.crowdfunding.util;
-
-/**
- * @author littleredhat
- */
-public class Consts {
-
-}

@@ -1,3 +1,0 @@
-INTERPRETER_PATH_NEW=
-eclipse.preferences.version=1
-org.python.pydev.editor.templates.PyTemplatePreferencesPage=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="org.python.pydev.editor.templates.python.modules" deleted\="false" description\="" enabled\="true" name\="utf-8">\# coding\=utf-8&\#13;\r\nCreated on ${date}&\#13;\r\n@author\: ${user}</template></templates>

@@ -1,0 +1,6 @@
+INDEX VERSION 1.3+F:\HelloWorld\Jee\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3211223408.index
+3089415461.index
+3408448714.index
+967465186.index
+3090246923.index
