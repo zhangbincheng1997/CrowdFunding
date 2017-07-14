@@ -1,0 +1,38 @@
+package com.redhat.crowdfunding.bean;
+
+/**
+ * @author littleredhat
+ */
+public class Fund {
+
+	// 众筹地址
+	private String addr;
+	// 已筹人数
+	private int number;
+	// 已筹金币
+	private int coin;
+
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+	public int getCoin() {
+		return coin;
+	}
+
+	public void setCoin(int coin) {
+		this.coin = coin;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+}

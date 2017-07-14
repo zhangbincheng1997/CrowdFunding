@@ -1,0 +1,35 @@
+package com.redhat.crowdfunding.dao;
+
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
+
+import org.web3j.abi.datatypes.Type;
+import org.web3j.abi.datatypes.Utf8String;
+import org.web3j.abi.datatypes.generated.Uint256;
+import org.web3j.protocol.core.methods.response.TransactionReceipt;
+
+/**
+ * @author littleredhat
+ */
+public interface CrowdFundingDao {
+
+	/********** 服务 **********/
+
+	// 众筹数量
+	public Future<Uint256> getFundCount();
+
+	// 众筹地址
+	public Future<Utf8String> getFundAddr(int i);
+
+	// 众筹信息
+	public CompletableFuture<List<Type>> getFundInfo(String addr);
+
+	/********** 用户 **********/
+
+	// 发起众筹
+	public Future<TransactionReceipt> raiseFund(String owner);
+
+	// 发送金币
+	public Future<TransactionReceipt> sendCoin(int coin);
+}

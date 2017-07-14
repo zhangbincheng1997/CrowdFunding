@@ -1,0 +1,8 @@
+package com.redhat.crowdfunding.controller;
+
+/**
+ * @author littleredhat
+ */
+public class CrowdFundingController {
+
+}

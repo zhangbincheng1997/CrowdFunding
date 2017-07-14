@@ -1,0 +1,36 @@
+package com.redhat.crowdfunding.controller;
+
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.redhat.crowdfunding.bean.Fund;
+import com.redhat.crowdfunding.service.CrowdFundingService;
+import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
+
+/**
+ * @author littleredhat
+ */
+@Controller
+public class CrowdFundingController {
+
+	@RequestMapping("/getFunds")
+	public String getFunds() {
+		CrowdFundingService service = new CrowdFundingServiceImpl();
+		try {
+			List<Fund> fList = service.getFunds();
+			return "list";
+		} catch (InterruptedException | ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "error";
+	}
+
+	@RequestMapping("/test")
+	public String test() {
+		return "error";
+	}
+}

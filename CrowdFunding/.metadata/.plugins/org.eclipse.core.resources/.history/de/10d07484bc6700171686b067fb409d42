@@ -1,0 +1,19 @@
+package com.redhat.crowdfunding.contract;
+
+import java.math.BigInteger;
+import java.util.concurrent.Future;
+
+import org.web3j.abi.EventValues;
+import org.web3j.protocol.core.methods.response.TransactionReceipt;
+
+/**
+ * @author littleredhat
+ */
+public interface CrowdFundingInterface {
+
+	public TransactionReceipt sendCoin(BigInteger value);
+
+	public Future<TransactionReceipt> endCrowd();
+
+	public EventValues processCrowdEndEvent(TransactionReceipt future);
+}

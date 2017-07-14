@@ -1,2 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.concurrent.CompletableFuture"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.Type"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.generated.Uint256"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.Utf8String"/>
+<fullyQualifiedTypeName name="org.web3j.tx.Contract"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="org.web3j.abi.TypeReference"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.Function"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.bean.Fund"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Consts"/>
+<fullyQualifiedTypeName name="org.web3j.utils.Async"/>
+<fullyQualifiedTypeName name="org.web3j.abi.FunctionEncoder"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.dao.CrowdFundingDaoImpl"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.dao.CrowdFundingDao"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.Address"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.web3j.abi.datatypes.Bool"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.contract.CrowdFundingInterface"/>
+<fullyQualifiedTypeName name="org.web3j.crypto.Credentials"/>
+<fullyQualifiedTypeName name="org.web3j.protocol.http.HttpService"/>
+<fullyQualifiedTypeName name="org.web3j.protocol.Web3j"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.web3j.crypto.WalletUtils"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Util"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.contract.CrowdFundingContract"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.junit.Ignore"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingService"/>
+</qualifiedTypeNameHistroy>

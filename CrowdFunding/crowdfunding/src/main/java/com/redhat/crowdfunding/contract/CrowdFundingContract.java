@@ -2,22 +2,22 @@ package com.redhat.crowdfunding.contract;
 
 import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.concurrent.ExecutionException;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-import org.web3j.abi.EventValues;
 import org.web3j.abi.FunctionEncoder;
 import org.web3j.abi.TypeReference;
 import org.web3j.abi.datatypes.Address;
-import org.web3j.abi.datatypes.Event;
+import org.web3j.abi.datatypes.Bool;
 import org.web3j.abi.datatypes.Function;
 import org.web3j.abi.datatypes.Type;
 import org.web3j.abi.datatypes.generated.Uint256;
 import org.web3j.crypto.Credentials;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
-import org.web3j.protocol.exceptions.TransactionTimeoutException;
 import org.web3j.tx.Contract;
+import org.web3j.utils.Async;
 
 import com.redhat.crowdfunding.util.Consts;
 
@@ -26,71 +26,59 @@ import com.redhat.crowdfunding.util.Consts;
  */
 public class CrowdFundingContract extends Contract implements CrowdFundingInterface {
 
-	/**
-	 * 众筹合约
-	 * 
-	 * @param contractAddress
-	 *            合约地址
-	 * @param web3j
-	 *            JSON-RPC请求
-	 * @param credentials
-	 *            发起者凭证
-	 * @param gasPrice
-	 *            gas价格
-	 * @param gasLimit
-	 *            gas上限
-	 */
 	public CrowdFundingContract(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice,
 			BigInteger gasLimit) {
 		super(contractAddress, web3j, credentials, gasPrice, gasLimit);
 	}
 
 	/**
-	 * 部署合约
-	 * 
-	 * @param web3j
-	 *            JSON-RPC请求
-	 * @param credentials
-	 *            发起者凭证
-	 * @param gasPrice
-	 *            gas价格
-	 * @param gasLimit
-	 *            gas上限
-	 * @param initialValue
-	 *            初始金币
-	 * @return
+	 * 众筹数量
 	 */
-	public static Future<CrowdFundingContract> deploy(Web3j web3j, Credentials credentials, BigInteger gasPrice,
-			BigInteger gasLimit, BigInteger initialValue, Address beneficiary) {
-		String encodedConstructor = FunctionEncoder.encodeConstructor(Arrays.<Type>asList(beneficiary));
-		return deployAsync(CrowdFundingContract.class, web3j, credentials, gasPrice, gasLimit, Consts.BINARY,
-				encodedConstructor, initialValue);
+	public Future<Uint256> getFundCount() {
+		Function function = new Function("getFundCount", Arrays.asList(),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {
+				}));
+		return executeCallSingleValueReturnAsync(function);
 	}
 
-	public TransactionReceipt sendCoin(BigInteger value) {
-		Function function = new Function("sendCoin", Arrays.asList(), Arrays.<TypeReference<?>>asList());
-		try {
-			return executeTransaction(FunctionEncoder.encode(function), value);
-		} catch (ExecutionException | InterruptedException | TransactionTimeoutException e) {
-			e.printStackTrace();
-		}
-		return null;
+	/**
+	 * 众筹信息
+	 */
+	public CompletableFuture<List<Type>> getFundInfo(int i) {
+		Function function = new Function("getFundInfo", Arrays.asList(new Uint256(BigInteger.valueOf(i))),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {
+				}, new TypeReference<Uint256>() {
+				}, new TypeReference<Uint256>() {
+				}));
+		return executeCallMultipleValueReturnAsync(function);
 	}
 
-	public Future<TransactionReceipt> endCrowd() {
-		Function function = new Function("endCrowd", Arrays.asList(), Arrays.<TypeReference<?>>asList());
+	/**
+	 * 是否存在
+	 */
+	public Future<Bool> isExist(String owner) {
+		Function function = new Function("isExist", Arrays.asList(new Address(owner)),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Bool>() {
+				}));
+		return executeCallSingleValueReturnAsync(function);
+	}
+
+	/**
+	 * 发起众筹
+	 */
+	public Future<TransactionReceipt> raiseFund(String owner) {
+		Function function = new Function("raiseFund", Arrays.asList(new Address(owner)),
+				Arrays.<TypeReference<?>>asList());
 		return executeTransactionAsync(function);
 	}
 
-	// 暂时不用
-	public EventValues processCrowdEndEvent(TransactionReceipt future) {
-		/*
-		 * String name 函数名字
-		 * List<TypeReference<?>> indexedParameters 含索引的参数
-		 * List<TypeReference<?>> nonIndexedParameters 不含索引的参数
-		 */
-		Event event = new Event("CrowdEnd", Arrays.<TypeReference<?>>asList(),
-				Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {}, new TypeReference<Uint256>() {}));
-		return extractEventParameters(event, future).get(0);
+	/**
+	 * 发送金币
+	 */
+	public Future<TransactionReceipt> sendCoin(String owner, int coin) {
+		Function function = new Function("sendCoin", Arrays.asList(new Address(owner)),
+				Arrays.<TypeReference<?>>asList());
+		return Async.run(() -> executeTransaction(FunctionEncoder.encode(function),
+				BigInteger.valueOf(coin).multiply(Consts.ETHER)));
 	}
 }

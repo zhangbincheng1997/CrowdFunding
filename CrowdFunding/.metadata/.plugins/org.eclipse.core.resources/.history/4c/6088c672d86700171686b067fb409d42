@@ -1,0 +1,65 @@
+package com.redhat.crowdfunding.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+
+import org.web3j.abi.datatypes.Type;
+import org.web3j.crypto.Credentials;
+
+import com.redhat.crowdfunding.bean.Fund;
+import com.redhat.crowdfunding.contract.CrowdFundingInterface;
+import com.redhat.crowdfunding.util.Util;
+
+/**
+ * @author littleredhat
+ */
+public class CrowdFundingServiceImpl implements CrowdFundingService {
+
+	private CrowdFundingInterface contract;
+
+	public CrowdFundingServiceImpl(String contractAddress) {
+		// 获得管理员凭证
+		Credentials credentials = Util.GetCredentials();
+		if (credentials == null) // 密码错误
+			return;
+		// 获取合约
+		contract = Util.GetCrowdFundingContract(credentials, contractAddress);
+	}
+
+	/**
+	 * 众筹列表
+	 * 
+	 * @throws ExecutionException
+	 * @throws InterruptedException
+	 */
+	public List<Fund> getFunds() throws InterruptedException, ExecutionException {
+		List<Fund> fList = new ArrayList<Fund>();
+		int count = contract.getFundCount().get().getValue().intValue();
+		for (int i = 0; i < count; i++) {
+			List<Type> info = contract.getFundInfo(i).get();
+			Fund fund = new Fund();
+			fund.setOwner(info.get(0).getValue().toString());
+			fund.setNumber(Integer.parseInt(info.get(1).getValue().toString()));
+			fund.setCoin(Integer.parseInt(info.get(2).getValue().toString()));
+			fList.add(fund);
+		}
+		return fList;
+	}
+
+	/**
+	 * 发起众筹
+	 */
+	public boolean raiseFund(String owner) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/**
+	 * 发送金币
+	 */
+	public boolean sendCoin(int coin) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

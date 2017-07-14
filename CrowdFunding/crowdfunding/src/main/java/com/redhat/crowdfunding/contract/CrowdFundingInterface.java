@@ -1,9 +1,12 @@
 package com.redhat.crowdfunding.contract;
 
-import java.math.BigInteger;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-import org.web3j.abi.EventValues;
+import org.web3j.abi.datatypes.Bool;
+import org.web3j.abi.datatypes.Type;
+import org.web3j.abi.datatypes.generated.Uint256;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
 
 /**
@@ -11,28 +14,22 @@ import org.web3j.protocol.core.methods.response.TransactionReceipt;
  */
 public interface CrowdFundingInterface {
 
-	/**
-	 * 发送金币
-	 * 
-	 * @param value
-	 *            金币
-	 * @return
-	 */
-	public TransactionReceipt sendCoin(BigInteger value);
+	/********** 服务 **********/
 
-	/**
-	 * 结束众筹
-	 * 
-	 * @return
-	 */
-	public Future<TransactionReceipt> endCrowd();
+	// 众筹数量
+	public Future<Uint256> getFundCount();
 
-	/**
-	 * 众筹结束事件
-	 * 
-	 * @param transactionReceipt
-	 *            事务凭据
-	 * @return
-	 */
-	public EventValues processCrowdEndEvent(TransactionReceipt future);
+	// 众筹信息
+	public CompletableFuture<List<Type>> getFundInfo(int i);
+
+	// 是否存在
+	public Future<Bool> isExist(String owner);
+
+	/********** 用户 **********/
+
+	// 发起众筹
+	public Future<TransactionReceipt> raiseFund(String owner);
+
+	// 发送金币
+	public Future<TransactionReceipt> sendCoin(String owner, int coin);
 }

@@ -1,0 +1,2 @@
+contract.source={"address":"6c97ea3f4f71669412aab8b7f705e253ce14064c","crypto":{"cipher":"aes-128-ctr","ciphertext":"9a59e7bd667344a01ed73ec52e86c83ac4efc9c8934564b91fb179728d4f2f90","cipherparams":{"iv":"edd24ad2d61962fc791b7aaf80c6676a"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"1274c790be6e01595d89cca19c0c28e640afa7c7b5c165bc2d7bdf1b42c0b218"},"mac":"ae2a53b1f262a8d84583a01dbf111b3243801b1518813233507f9003bac82fb2"},"id":"f623416a-7e26-459e-831f-83e5badc1e40","version":3}
+contract.password="123456"

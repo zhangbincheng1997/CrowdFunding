@@ -1,0 +1,28 @@
+1499941700637	Delete element
+1499942263349	Rename resource 'contract.propertites'
+1499944834949	Rename type 'CrowdFundingContract'
+1499945515217	Encapsulate field 'owner'
+1499951801549	Delete element
+1499952252868	Rename package 'com.redhat.crowdfunding.dao'
+1499952259483	Rename type 'CrowdFundingDao'
+1499952268822	Rename type 'CrowdFundingContract'
+1499952273011	Rename type 'CrowdFundingDaoImpl'
+1499958155736	Delete element
+1499958735661	Rename resource 'contract.properties'
+1499960329264	Copy file
+1499960473744	Rename resource 'index.jsp'
+1499960631412	Move 'jsp' to 'WEB-INF'
+1499961397355	Delete elements
+1499961468037	Copy file
+1499962077023	Copy file
+1499962412768	Delete element
+1499962476044	Delete element
+1499962482480	Move 'sublistStudent.jsp' to 'jsp'
+1499962485642	Delete element
+1499962514088	Rename resource 'sublistStudent.jsp'
+1499962862681	Delete element
+1499962865324	Rename resource 'hello.jsp'
+1499965266554	Copy file
+1499969998411	Rename type 'JTest'
+1499970254372	Rename type 'JCrowd'
+1499970649732	Rename type 'JTest'

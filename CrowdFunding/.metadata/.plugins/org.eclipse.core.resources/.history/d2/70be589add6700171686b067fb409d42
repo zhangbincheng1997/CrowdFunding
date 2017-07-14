@@ -1,0 +1,23 @@
+package com.redhat.crowdfunding.util;
+
+import java.math.BigInteger;
+
+/**
+ * @author littleredhat
+ */
+public class Consts {
+	// Gas价格
+	public static BigInteger GAS_PRICE = BigInteger.valueOf(20_000_000_000L);
+	// Gas上限
+	public static BigInteger GAS_LIMIT = BigInteger.valueOf(4_300_000L);
+	// ETHER以太币
+	public static BigInteger ETHER = new BigInteger("1000000000000000000");
+	// 临时文件前缀
+	public static String PREFIX = "key";
+	// 临时文件后缀
+	public static String SUFFIX = ".tmp";
+	// 钱包密码
+	public static String PASSWORD = "123456";
+	// 钱包路径
+	public static String PATH = "F:\\chain\\geth-win64\\chain\\keystore\\UTC--2017-05-03T17-48-46.721084800Z--6c97ea3f4f71669412aab8b7f705e253ce14064c";
+}

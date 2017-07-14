@@ -1,0 +1,112 @@
+package com.redhat.crowdfunding.contract;
+
+import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
+
+import org.web3j.abi.FunctionEncoder;
+import org.web3j.abi.TypeReference;
+import org.web3j.abi.datatypes.Function;
+import org.web3j.abi.datatypes.Type;
+import org.web3j.abi.datatypes.Utf8String;
+import org.web3j.abi.datatypes.generated.Uint256;
+import org.web3j.crypto.Credentials;
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.response.TransactionReceipt;
+import org.web3j.tx.Contract;
+import org.web3j.utils.Async;
+
+import com.redhat.crowdfunding.util.Consts;
+
+/**
+ * @author littleredhat
+ */
+public class CrowdFundingDaoImpl extends Contract implements CrowdFundingContract {
+
+	public CrowdFundingDaoImpl(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice,
+			BigInteger gasLimit) {
+		super(contractAddress, web3j, credentials, gasPrice, gasLimit);
+	}
+
+	/**
+	 * 部署合约
+	 * 
+	 * @param web3j
+	 *            JSON-RPC请求
+	 * @param credentials
+	 *            发起者凭证
+	 * @param gasPrice
+	 *            gas价格
+	 * @param gasLimit
+	 *            gas上限
+	 * @param binary
+	 *            合约二进制代码
+	 * @param initialValue
+	 *            初始金币
+	 * @param pointer
+	 *            附件指针
+	 * @return
+	 */
+	public static Future<CrowdFundingDaoImpl> deploy(Web3j web3j, Credentials credentials, BigInteger gasPrice,
+			BigInteger gasLimit, BigInteger initialValue, String binary, String ownerName, String desc,
+			BigInteger deposit, BigInteger deadline, BigInteger maxNum, BigInteger minReputation, BigInteger type,
+			String pointer) {
+		String encodedConstructor = FunctionEncoder.encodeConstructor(
+				Arrays.asList());
+		return deployAsync(CrowdFundingDaoImpl.class, web3j, credentials, gasPrice, gasLimit, binary, encodedConstructor,
+				initialValue.multiply(Consts.ETHER));
+	}
+	
+	/**
+	 * 众筹数量
+	 */
+	public Future<Uint256> getFundCount() {
+		Function function = new Function("getFundCount", Arrays.asList(),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {
+				}));
+		return executeCallSingleValueReturnAsync(function);
+	}
+
+	/**
+	 * 众筹地址
+	 */
+	public Future<Utf8String> getFundAddr(int i) {
+		Function function = new Function("getFundAddr", Arrays.asList(new Uint256(BigInteger.valueOf(i))),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Utf8String>() {
+				}));
+		return executeCallSingleValueReturnAsync(function);
+	}
+
+	/**
+	 * 众筹信息 owner coin number
+	 */
+	public CompletableFuture<List<Type>> getFundInfo(String addr) {
+		Function function = new Function("getFundInfo", Arrays.asList(new Utf8String(addr)),
+				Arrays.<TypeReference<?>>asList(new TypeReference<Utf8String>() {
+				}, new TypeReference<Uint256>() {
+				}, new TypeReference<Uint256>() {
+				}));
+		return executeCallMultipleValueReturnAsync(function);
+	}
+
+	/**
+	 * 发起众筹
+	 */
+	public Future<TransactionReceipt> raiseFund(String owner) {
+		Function function = new Function("raiseFund", Arrays.asList(new Utf8String(owner)),
+				Arrays.<TypeReference<?>>asList());
+		return executeTransactionAsync(function);
+	}
+
+	/**
+	 * 发送金币
+	 */
+	public Future<TransactionReceipt> sendCoin(String addr, int coin) {
+		Function function = new Function("sendCoin", Arrays.asList(new Utf8String(addr)),
+				Arrays.<TypeReference<?>>asList());
+		return Async.run(() -> executeTransaction(FunctionEncoder.encode(function),
+				BigInteger.valueOf(coin).multiply(Consts.ETHER)));
+	}
+}

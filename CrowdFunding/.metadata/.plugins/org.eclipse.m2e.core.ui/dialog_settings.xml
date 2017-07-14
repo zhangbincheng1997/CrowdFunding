@@ -32,7 +32,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item value="http://repo1.maven.org/maven2/archetype-catalog.xml" key="catalog"/>
+		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -61,13 +61,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.redhat.crowdfunding"/>
 		</list>
 		<list key="groupId">
-			<item value="com.redhat"/>
 		</list>
 		<list key="artifactId">
-			<item value="crowdfunding"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

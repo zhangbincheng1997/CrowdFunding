@@ -1,3 +1,6 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_number_of_computers=24
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
@@ -10,7 +13,10 @@ org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
 org.eclipse.jdt.ui.importorder=java;javax;org;com;
 org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="newtype_context" deleted\="false" description\="\u65B0\u521B\u5EFA\u7684\u6587\u4EF6" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.newtype" name\="newtype">${filecomment}${package_declaration}&\#13;\r\n&\#13;\r\n/**&\#13;\r\n * @author littleredhat&\#13;\r\n */&\#13;\r\n${typecomment}${type_declaration}</template>\n<template autoinsert\="false" context\="annotationbody_context" deleted\="false" description\="\u65B0\u6CE8\u91CA\u7C7B\u578B\u4E3B\u4F53\u4E2D\u7684\u4EE3\u7801" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.annotationbody" name\="annotationbody">/**\r\n *\r\n */\r\n</template></templates>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
 org.eclipse.jface.textfont=1|Courier New|10.5|0|WINDOWS|1|-14|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
 proposalOrderMigrated=true
 sourceHoverBackgroundColor=255,255,225

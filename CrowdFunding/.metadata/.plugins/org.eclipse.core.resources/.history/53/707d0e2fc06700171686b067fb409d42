@@ -1,0 +1,55 @@
+package com.redhat.crowdfunding.dao;
+
+import java.math.BigInteger;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
+
+import org.web3j.abi.datatypes.Type;
+import org.web3j.abi.datatypes.Utf8String;
+import org.web3j.abi.datatypes.generated.Uint256;
+import org.web3j.crypto.Credentials;
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.response.TransactionReceipt;
+import org.web3j.tx.Contract;
+
+/**
+ * @author littleredhat
+ */
+public class CrowdFundingDaoImpl extends Contract implements CrowdFundingDao {
+
+	protected CrowdFundingDaoImpl(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice,
+			BigInteger gasLimit) {
+		super(contractAddress, web3j, credentials, gasPrice, gasLimit);
+	}
+
+	@Override
+	public Future<Uint256> getFundCount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Future<Utf8String> getFundAddr(Uint256 i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CompletableFuture<List<Type>> getFundInfo(String addr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Future<TransactionReceipt> raiseFund(String owner) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Future<TransactionReceipt> sendCoin(BigInteger coin) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

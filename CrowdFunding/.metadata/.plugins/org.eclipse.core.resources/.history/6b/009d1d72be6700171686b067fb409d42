@@ -1,0 +1,38 @@
+package com.redhat.crowdfunding.bean;
+
+/**
+ * @author littleredhat
+ */
+public class Fund {
+
+	// 众筹地址
+	private String addr;
+	// 当前金币
+	private int nowCoin;
+	// 最大金币
+	private int maxCoin;
+
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+	public int getNowCoin() {
+		return nowCoin;
+	}
+
+	public void setNowCoin(int nowCoin) {
+		this.nowCoin = nowCoin;
+	}
+
+	public int getMaxCoin() {
+		return maxCoin;
+	}
+
+	public void setMaxCoin(int maxCoin) {
+		this.maxCoin = maxCoin;
+	}
+}
