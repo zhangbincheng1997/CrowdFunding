@@ -36,6 +36,11 @@
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
 	</section>
+	<section name="JavaBuildConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="true" key="expanded1"/>
+		<item value="true" key="expanded0"/>
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>

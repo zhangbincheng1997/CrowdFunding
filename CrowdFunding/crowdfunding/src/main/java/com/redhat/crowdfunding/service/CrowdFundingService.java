@@ -14,7 +14,7 @@ public interface CrowdFundingService {
 	public List<Fund> getFunds() throws InterruptedException, ExecutionException;
 
 	// 发起众筹
-	public boolean raiseFund(String owner) throws InterruptedException, ExecutionException;
+	public boolean raiseFund() throws InterruptedException, ExecutionException;
 
 	// 发送金币
 	public boolean sendCoin(String owner, int coin) throws InterruptedException, ExecutionException;

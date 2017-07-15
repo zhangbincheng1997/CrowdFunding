@@ -1,5 +1,6 @@
 package com.redhat.crowdfunding.service;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -22,6 +23,8 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	public CrowdFundingServiceImpl() {
 		// 获得管理员凭证
 		Credentials credentials = Util.GetCredentials();
+		if (credentials == null)
+			return;
 		// 获取合约
 		contract = Util.GetCrowdFundingContract(credentials, Consts.ADDR);
 	}
@@ -49,7 +52,7 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 			Fund fund = new Fund();
 			fund.setOwner(info.get(0).toString());
 			fund.setNumber(Integer.parseInt(info.get(1).getValue().toString()));
-			fund.setCoin(Integer.parseInt(info.get(2).getValue().toString()));
+			fund.setCoin(new BigInteger(info.get(2).getValue().toString()).divide(Consts.ETHER).intValue());
 			fList.add(fund);
 		}
 		return fList;
@@ -61,11 +64,13 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	 * @throws ExecutionException
 	 * @throws InterruptedException
 	 */
-	public boolean raiseFund(String owner) throws InterruptedException, ExecutionException {
-		boolean res = contract.isExist(owner).get().getValue();
-		if (!res) { // 不存在
-			contract.raiseFund(owner);
-			return true;
+	public boolean raiseFund() throws InterruptedException, ExecutionException {
+		if (contract != null) {
+			boolean res = contract.isExist(contract.getContractAddress()).get().getValue();
+			if (!res) { // 不存在
+				contract.raiseFund();
+				return true;
+			}
 		}
 		return false;
 	}
@@ -77,10 +82,12 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	 * @throws InterruptedException
 	 */
 	public boolean sendCoin(String owner, int coin) throws InterruptedException, ExecutionException {
-		boolean res = contract.isExist(owner).get().getValue();
-		if (res) { // 存在
-			contract.sendCoin(owner, coin);
-			return true;
+		if (contract != null) {
+			boolean res = contract.isExist(owner).get().getValue();
+			if (res) { // 存在
+				contract.sendCoin(owner, coin);
+				return true;
+			}
 		}
 		return false;
 	}

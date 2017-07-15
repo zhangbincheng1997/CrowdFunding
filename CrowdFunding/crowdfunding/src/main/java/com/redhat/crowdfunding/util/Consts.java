@@ -21,5 +21,5 @@ public class Consts {
 	// 钱包路径
 	public static String PATH = "/wallet.txt";
 	// 合约地址
-	public static String ADDR = "0x21Ff3f3dAdC18D306A57894aDc26F2fBF22c0416";
+	public static String ADDR = "0x109c3E671EBc9C6A1C2b5fC8726E02Fbb1620Ad8";
 }

@@ -15,7 +15,6 @@ import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
 import com.redhat.crowdfunding.contract.CrowdFundingContract;
-import com.redhat.crowdfunding.contract.CrowdFundingInterface;
 
 /**
  * @author littleredhat

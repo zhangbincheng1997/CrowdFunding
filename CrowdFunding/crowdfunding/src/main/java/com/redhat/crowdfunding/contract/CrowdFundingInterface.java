@@ -28,7 +28,7 @@ public interface CrowdFundingInterface {
 	/********** 用户 **********/
 
 	// 发起众筹
-	public Future<TransactionReceipt> raiseFund(String owner);
+	public Future<TransactionReceipt> raiseFund();
 
 	// 发送金币
 	public Future<TransactionReceipt> sendCoin(String owner, int coin);

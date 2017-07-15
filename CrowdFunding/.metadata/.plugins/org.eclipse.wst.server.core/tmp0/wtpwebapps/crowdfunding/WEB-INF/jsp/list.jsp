@@ -5,11 +5,10 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <html>
 <head>
-<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-<script type="text/javascript" src="static/jquery/jquery-3.2.1.min.js"></script>
-<script type="text/javascript"
-	src="static/bootstrap/js/bootstrap.min.js"></script>
 <title>众筹系统</title>
+<link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+<script type="text/javascript" src="static/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/bootstrap.min.js"></script>
 </head>
 
 <style>
@@ -24,61 +23,117 @@ body {
 </style>
 
 <script>
-
-function select(owner) {
-	$('#owner').val(owner);
-}
-
-function confirm() {
-	var owner = $.trim($('#owner').val());
-	var coin = $.trim($('#coin').val());
-	var password = $.trim($('#password').val());
-	var file = $.trim($('#file').val());
-	if(!owner || !coin || !password || !file) {
-		alert('信息不完善！');
-        return false;
+	function select(owner) {
+		$('#owner').val(owner);
 	}
-	
-    // 异步提交
-    $.ajax({
-                url: "sendCoin",
-                type: "POST",
-                data: new FormData($('#myForm')[0]),
-                contentType: false,
-                processData: false,
-                beforeSend:function()
-                {
-                    $("#tip").html("<span style='color:blue'>正在处理...</span>");
-                    return true;
-                },
-                success:function(res)
-                {
-                    if(data)
-                    {
-                        $("#tip").html("<span style='color:green'>成功</span>");
-                        alert('操作成功');
-                    }
-                    else
-                    {
-                        $("#tip").html("<span style='color:red'>失败</span>");
-                        alert('操作失败');
-                    }
-                    setTimeout(function(){$("#myModal").modal("hide")}, 1000);
-                }
-            });
 
-    return false;
-}
+	// 模态框1
+	function confirm() {
+		var owner = $.trim($('#owner').val());
+		var coin = $.trim($('#coin').val());
+		var password = $.trim($('#password').val());
+		var file = $.trim($('#file').val());
+		if (!owner || !coin || !password || !file) {
+			alert('信息不完善！');
+			return false;
+		}
 
-$(function () { $('#myModal').on('hide.bs.modal', function () {
-	$("#owner").val('');
-	$("#coin").val('');
-	$("#password").val('');
-	$("#file").val('');
-})
-});
+		// 读取文件
+		var reader = new FileReader();
+		reader.readAsText(document.getElementById("file").files[0], "UTF-8");
+		reader.onload = function(e) {
+			var content = e.target.result;
 
+			// 异步提交
+			$.ajax({
+				url : "sendCoin",
+				type : "POST",
+				data : {
+					"owner" : owner,
+					"coin" : coin,
+					"password" : password,
+					"content" : content
+				},
+				beforeSend : function() {
+					$("#tip").html('<span style="color:blue">正在处理...</span>');
+					return true;
+				},
+				success : function(res) {
+					if (res) {
+						alert('操作成功');
+					} else {
+						alert('操作失败');
+					}
+					setTimeout(function() {
+						$("#myModal").modal('hide')
+					}, 1000);
+				}
+			});
+		};
+		return false;
+	}
 
+	//模态框2
+	function confirm2() {
+		var password = $.trim($('#password2').val());
+		var file = $.trim($('#file2').val());
+		if (!password || !file) {
+			alert('信息不完善！');
+			return false;
+		}
+
+		// 读取文件
+		var reader = new FileReader();
+		reader.readAsText(document.getElementById("file2").files[0], "UTF-8");
+		reader.onload = function(e) {
+			var content = e.target.result;
+
+			// 异步提交
+			$.ajax({
+				url : "raiseFund",
+				type : "POST",
+				data : {
+					"password" : password,
+					"content" : content
+				},
+				beforeSend : function() {
+					$("#tip2").html('<span style="color:blue">正在处理...</span>');
+					return true;
+				},
+				success : function(res) {
+					if (res) {
+						alert('操作成功');
+					} else {
+						alert('操作失败');
+					}
+					setTimeout(function() {
+						$("#myModal2").modal('hide')
+					}, 1000);
+				}
+			});
+		};
+		return false;
+	}
+
+	// 模态框1
+	$(function() {
+		$('#myModal').on('hide.bs.modal', function() {
+			$("#owner").val('');
+			$("#coin").val('');
+			$("#password").val('');
+			$("#file").val('');
+			$("#tip").html('<span id="tip"> </span>');
+		})
+	});
+
+	//模态框2
+	$(function() {
+		$('#myModal2').on('hide.bs.modal', function() {
+			$("#password2").val('');
+			$("#file2").val('');
+			$("#tip2").html('<span id="tip2"> </span>');
+		})
+	});
 </script>
 
 <body>
@@ -111,19 +166,19 @@ $(function () { $('#myModal').on('hide.bs.modal', function () {
 								<td><c:out value="${ fund.coin }"></c:out></td>
 								<td><button type="button" class="btn btn-primary btn-sm"
 										data-toggle="modal" data-target="#myModal"
-										onclick="select('${ fund.owner }')">捐赠</button></td>
+										onclick="select('${ fund.owner }')">我要捐赠</button></td>
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
 			</c:if>
 
-			<button type="button" class="btn btn-success"
-				onclick="select(${ fund.owner })">发起众筹</button>
+			<button type="button" class="btn btn-success btn-lg"
+				data-toggle="modal" data-target="#myModal2">我要众筹</button>
 		</div>
 	</div>
 
-	<!-- 模态框（Modal） -->
+	<!-- 模态框1（Modal） -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -135,8 +190,7 @@ $(function () { $('#myModal').on('hide.bs.modal', function () {
 				</div>
 
 				<div class="modal-body">
-					<form class="form-horizontal" role="form"
-						enctype="multipart/form-data" id="myForm">
+					<form class="form-horizontal" role="form">
 						<div class="form-group">
 							<label class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-8">
@@ -173,6 +227,48 @@ $(function () { $('#myModal').on('hide.bs.modal', function () {
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 					<button type="button" class="btn btn-primary" onclick="confirm()">确认</button>
 					<span id="tip"> </span>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- 模态框2（Modal） -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel2">发起众筹</h4>
+				</div>
+
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">密码</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="password2"
+									name="password2" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">密钥</label>
+							<div class="col-sm-8">
+								<input type="file" id="file2" name="file2" />
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="confirm2()">确认</button>
+					<span id="tip2"> </span>
 				</div>
 			</div>
 			<!-- /.modal-content -->

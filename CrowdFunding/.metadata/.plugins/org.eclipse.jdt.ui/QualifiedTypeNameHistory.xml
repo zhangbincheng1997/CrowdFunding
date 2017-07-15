@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.generated.Uint256"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Utf8String"/>
 <fullyQualifiedTypeName name="org.web3j.tx.Contract"/>
-<fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="org.web3j.abi.TypeReference"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Function"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -38,4 +37,6 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
 </qualifiedTypeNameHistroy>

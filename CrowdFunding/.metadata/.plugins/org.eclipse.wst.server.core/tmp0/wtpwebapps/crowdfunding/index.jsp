@@ -1,3 +1,3 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
-<!-- 直接跳转 -->
-<jsp:forward page="/getFunds" />
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<jsp:forward page="getFunds"></jsp:forward>

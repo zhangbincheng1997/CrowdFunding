@@ -1773,3 +1773,825 @@
 2017-07-14 23:40:48,825 [Worker-247] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
 2017-07-14 23:40:48,837 [Worker-247] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
 2017-07-14 23:40:48,841 [Worker-247] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:46:36,032 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:46:36,063 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-14 23:46:36,137 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:46:36,150 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:05,519 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-14 23:50:07,786 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/{ spring.version }/spring-webmvc-{ spring.version }.pom
+2017-07-14 23:50:07,874 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{ spring.version } is missing, no dependency information available
+2017-07-14 23:50:09,311 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/{ spring.version }/spring-webmvc-{ spring.version }.jar
+2017-07-14 23:50:09,583 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{ spring.version } is missing, no dependency information available
+2017-07-14 23:50:10,135 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:10,140 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 23:50:10,143 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:10,146 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:10,147 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-14 23:50:10,148 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-14 23:50:10,153 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:11,723 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{ spring.version } is missing, no dependency information available
+2017-07-14 23:50:11,759 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:11,763 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 23:50:11,764 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:11,768 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:13,789 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-14 23:50:15,088 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/{spring.version}/spring-webmvc-{spring.version}.pom
+2017-07-14 23:50:15,091 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{spring.version} is missing, no dependency information available
+2017-07-14 23:50:16,136 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/{spring.version}/spring-webmvc-{spring.version}.jar
+2017-07-14 23:50:16,214 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{spring.version} is missing, no dependency information available
+2017-07-14 23:50:16,798 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:16,806 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 23:50:16,808 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:16,811 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:16,812 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-14 23:50:16,812 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-14 23:50:16,817 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:18,119 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.springframework:spring-webmvc:jar:{spring.version} is missing, no dependency information available
+2017-07-14 23:50:18,167 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:18,171 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 23:50:18,172 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:18,191 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:24,977 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-14 23:50:25,629 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:25,638 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-14 23:50:25,639 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:25,643 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-14 23:50:25,643 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-14 23:50:25,643 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-14 23:50:25,647 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:27,678 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:27,771 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-14 23:50:27,794 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-14 23:50:27,800 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:52:26,483 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:52:26,484 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:52:26,485 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:52:26,490 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:52:30,467 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:52:30,467 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:52:30,468 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:52:30,468 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:53:04,174 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:53:04,175 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:53:04,177 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:53:04,177 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:56:16,306 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:56:16,309 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:56:16,326 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:56:16,327 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:56:25,202 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:56:25,203 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:56:25,204 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:56:25,204 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:57:42,788 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:57:42,789 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:57:42,790 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:57:42,790 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:57:44,945 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:57:44,946 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:57:44,947 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:57:44,948 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:58:51,959 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:58:51,960 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:58:51,963 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:58:51,963 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 00:59:07,739 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:59:07,739 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 00:59:07,742 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 00:59:07,744 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:00:04,312 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:00:04,313 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:00:04,314 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:00:04,315 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:00:40,371 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:00:40,372 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:00:40,373 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:00:40,373 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:01:18,236 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:01:18,237 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:01:18,238 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:01:18,238 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:01:41,036 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:01:41,036 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:01:41,037 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:01:41,037 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:03:02,802 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:02,803 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:03:02,805 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:02,805 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:03:07,117 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:07,118 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:03:07,118 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:07,119 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:03:23,472 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:23,472 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:03:23,475 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:23,475 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:03:43,871 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:43,871 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:03:43,872 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:03:43,872 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:04:24,454 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:04:24,455 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:04:24,456 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:04:24,457 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:05:24,460 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:05:24,460 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:05:24,465 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:05:24,466 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:05:31,413 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:05:31,414 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:05:31,414 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:05:31,415 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:12:24,638 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:12:24,639 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:12:24,643 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:12:24,643 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:12:37,926 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:12:37,926 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:12:37,927 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:12:37,928 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:13:52,186 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:13:52,190 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:13:52,191 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:13:52,192 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:16:47,562 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:16:47,562 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:16:47,563 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:16:47,563 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:16:56,780 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:16:56,781 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:16:56,782 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:16:56,782 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:17:21,893 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:17:21,893 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:17:21,894 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:17:21,894 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:28:07,869 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:28:07,869 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:28:07,870 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:28:07,870 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:28:16,310 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:28:16,311 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:28:16,311 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:28:16,312 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:36:37,937 [Worker-70] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:36:48,991 [Worker-70] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.pom
+2017-07-15 01:36:59,934 [Worker-70] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar
+2017-07-15 01:37:00,287 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:00,290 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:37:00,292 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:00,292 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:37:00,293 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:37:00,293 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:37:00,296 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:01,695 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:01,696 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:37:01,698 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:01,698 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:37:40,851 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:40,852 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:37:40,853 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:37:40,854 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:38:05,324 [Worker-72] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:38:06,341 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:06,343 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:38:06,348 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:06,348 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:38:06,349 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:38:06,349 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:38:06,354 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:07,983 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:07,985 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:38:07,988 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:07,988 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:38:17,067 [Worker-69] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-15 01:38:17,345 [Worker-69] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:38:18,039 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/main/java
+2017-07-15 01:38:18,040 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /crowdfunding/src/main/resources
+2017-07-15 01:38:18,041 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/test/java
+2017-07-15 01:38:29,742 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 01:38:29,747 [Worker-69] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2017-07-15 01:38:30,396 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:30,398 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:38:30,409 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:38:30,409 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:38:30,410 [Worker-74] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:38:30,410 [Worker-74] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:38:30,413 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:02,450 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:02,457 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:39:02,458 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:02,458 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:39:04,111 [Worker-69] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:39:04,730 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:04,732 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:39:04,735 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:04,735 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:39:04,736 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:39:04,736 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:39:04,739 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:20,823 [Worker-69] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-15 01:39:21,066 [Worker-69] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:39:21,818 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/main/java
+2017-07-15 01:39:21,818 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /crowdfunding/src/main/resources
+2017-07-15 01:39:21,818 [Worker-69] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/test/java
+2017-07-15 01:39:43,165 [Worker-69] ERROR o.e.m.w.jsf.internal.utils.JSFUtils - An error occurred trying to find javax.faces.webapp.FacesServlet :
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_72]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_72]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_72]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:1.8.0_72]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startEntity(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startDTDEntity(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl.setInputSource(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source) ~[na:1.8.0_72]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source) ~[na:1.8.0_72]
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source) ~[na:1.8.0_72]
+	at org.eclipse.m2e.wtp.jsf.internal.utils.JSFUtils.hasFacesServlet(JSFUtils.java:139) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.utils.JSFUtils.hasFacesServlet(JSFUtils.java:115) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.WebXmlJSFFacetDetector.hasFacesServletInWebXml(WebXmlJSFFacetDetector.java:80) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.WebXmlJSFFacetDetector.findFacetVersion(WebXmlJSFFacetDetector.java:55) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.facets.FacetDetectorManager.findFacetVersion(FacetDetectorManager.java:91) [org.eclipse.m2e.wtp_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.facets.FacetDetectorManager.findFacetVersion(FacetDetectorManager.java:61) [org.eclipse.m2e.wtp_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.JSFProjectConfigurator.configureInternal(JSFProjectConfigurator.java:93) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.wtp.jsf.internal.configurators.JSFProjectConfigurator.configure(JSFProjectConfigurator.java:68) [org.eclipse.m2e.wtp.jsf_1.3.1.20160831-1005.jar:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.11.1.v20161107-2032.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-07-15 01:39:43,331 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 01:39:43,342 [Worker-69] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 22 sec
+2017-07-15 01:39:43,707 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:43,708 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:39:43,715 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:39:43,716 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:39:43,716 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:39:43,716 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:39:43,719 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:41:22,447 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:41:22,454 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:41:22,455 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:41:22,455 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:42:11,593 [Worker-72] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-15 01:42:11,859 [Worker-72] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:42:21,936 [Worker-72] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.pom
+2017-07-15 01:42:31,942 [Worker-72] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom
+2017-07-15 01:42:42,352 [Worker-72] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar
+2017-07-15 01:42:52,356 [Worker-72] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar
+2017-07-15 01:42:52,503 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/main/java
+2017-07-15 01:42:52,504 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /crowdfunding/src/main/resources
+2017-07-15 01:42:52,504 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/test/java
+2017-07-15 01:42:54,395 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 01:42:54,399 [Worker-72] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 42 sec
+2017-07-15 01:42:54,775 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:42:54,777 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:42:54,788 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:42:54,788 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:42:54,788 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:42:54,789 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:42:54,792 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:44:21,034 [Worker-76] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-07-15 01:44:21,262 [Worker-76] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:44:31,311 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.pom
+2017-07-15 01:44:41,315 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom
+2017-07-15 01:44:51,721 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar
+2017-07-15 01:44:53,282 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar
+2017-07-15 01:45:15,729 [Worker-76] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar
+2017-07-15 01:45:16,328 [Worker-76] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/main/java
+2017-07-15 01:45:16,329 [Worker-76] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /crowdfunding/src/main/resources
+2017-07-15 01:45:16,329 [Worker-76] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crowdfunding/src/test/java
+2017-07-15 01:45:27,846 [Worker-76] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 01:45:27,850 [Worker-76] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 66 sec
+2017-07-15 01:45:28,204 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:45:28,205 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:45:28,216 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:45:28,217 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:45:28,217 [Worker-71] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:45:28,217 [Worker-71] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:45:28,221 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:48:17,302 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:48:17,305 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:48:17,306 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:48:17,307 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:52:35,381 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:52:35,426 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-15 01:52:35,427 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:52:35,427 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:52:58,080 [Worker-84] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:52:58,080 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-15 01:52:58,081 [Worker-84] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:52:58,082 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:55:49,303 [Worker-79] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:55:59,468 [Worker-79] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.pom
+2017-07-15 01:56:09,471 [Worker-79] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+2017-07-15 01:56:19,831 [Worker-79] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar
+2017-07-15 01:56:29,833 [Worker-79] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+2017-07-15 01:56:29,966 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:56:29,968 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:56:29,969 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:56:29,970 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:56:29,971 [Worker-79] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:56:29,971 [Worker-79] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:56:29,973 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:56:31,586 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:56:31,588 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:56:31,590 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:56:31,591 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:59:08,311 [Worker-86] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.redhat:crowdfunding:0.0.1-SNAPSHOT @ F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\pom.xml.
+2017-07-15 01:59:08,793 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:08,796 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 01:59:08,798 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:08,798 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:59:08,799 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 01:59:08,799 [Worker-86] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 01:59:08,802 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:10,204 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:10,207 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:59:10,217 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:10,218 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:59:35,914 [Worker-93] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:35,916 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:59:35,918 [Worker-93] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:35,919 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 01:59:40,104 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:40,105 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 01:59:40,106 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 01:59:40,107 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:02:25,594 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:25,595 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:02:25,596 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:25,597 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:02:27,705 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:27,705 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:02:27,706 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:27,706 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:02:57,004 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:57,004 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:02:57,005 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:02:57,005 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:03:06,003 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:03:06,004 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:03:06,005 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:03:06,005 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:03:52,704 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:03:52,705 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:03:52,709 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:03:52,710 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:04:00,539 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:04:00,540 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:04:00,540 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:04:00,540 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:05:11,305 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:05:11,305 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:05:11,306 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:05:11,306 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:06:03,168 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:03,168 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:06:03,169 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:03,170 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:06:12,218 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:12,218 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:06:12,219 [Worker-86] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:12,219 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:06:28,087 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:28,088 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:06:28,096 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:06:28,096 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:07:16,614 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:07:16,615 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:07:16,616 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:07:16,617 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:07:49,061 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:07:49,062 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-15 02:07:49,064 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:07:49,064 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:08:01,892 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:08:01,893 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:08:01,895 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:08:01,895 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:11:09,807 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:11:09,808 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:11:09,809 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:11:09,809 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:22:46,403 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:22:46,403 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:22:46,404 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:22:46,404 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:26:14,763 [Worker-116] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:26:14,763 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:26:14,768 [Worker-116] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:26:14,769 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:36:48,712 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:36:48,713 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:36:48,714 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:36:48,714 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:38:05,182 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:38:05,183 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:38:05,184 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:38:05,184 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:39:20,350 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:39:20,351 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:39:20,352 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:39:20,352 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:40:50,239 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:40:50,240 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:40:50,241 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:40:50,241 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:41:32,426 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:41:32,426 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:41:32,431 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:41:32,432 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:41:41,412 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:41:41,412 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:41:41,413 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:41:41,414 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:42:58,098 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:42:58,099 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:42:58,099 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:42:58,099 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:43:50,276 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:43:50,276 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:43:50,277 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:43:50,278 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:46:17,608 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:46:17,609 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:46:17,617 [Worker-120] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:46:17,618 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 02:47:33,985 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:47:33,986 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 02:47:33,986 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 02:47:33,987 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:43:37,040 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:43:37,073 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 12:43:37,081 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:43:37,082 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:47:25,947 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:47:25,952 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:47:25,962 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:47:25,964 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:50:15,217 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:50:15,219 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:50:15,221 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:50:15,222 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:53:17,569 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:53:17,571 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:53:17,573 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:53:17,575 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:54:22,879 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:22,882 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:54:22,884 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:22,886 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:54:35,794 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:35,796 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:54:35,797 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:35,798 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 12:54:45,543 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:45,544 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 12:54:45,567 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 12:54:45,568 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:00:42,431 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:00:42,432 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:00:42,436 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:00:42,437 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:01:55,632 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:01:55,641 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:01:55,642 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:01:55,642 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:03:17,041 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:03:17,044 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:03:17,045 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:03:17,046 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:04:22,251 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:04:22,252 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:04:22,253 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:04:22,254 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:05:26,020 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:05:26,021 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:05:26,022 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:05:26,023 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:05:39,662 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:05:39,663 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:05:39,665 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:05:39,665 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:08:47,574 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:08:47,575 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:08:47,576 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:08:47,577 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:26:20,356 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:26:20,357 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:26:20,358 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:26:20,358 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:29:38,976 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:29:38,977 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:29:38,978 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:29:38,979 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:31:05,885 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:31:05,886 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:31:05,888 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:31:05,888 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:31:30,080 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:31:30,081 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:31:30,081 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:31:30,082 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:32:04,811 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:32:04,812 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:32:04,827 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:32:04,830 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:32:32,507 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:32:32,508 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:32:32,509 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:32:32,520 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:33:22,915 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:33:22,919 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:33:22,931 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:33:22,934 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:33:33,924 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:33:33,928 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:33:33,943 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:33:33,944 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:36:19,410 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:36:19,411 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:36:19,412 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:36:19,413 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:37:50,816 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:37:50,816 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:37:50,817 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:37:50,817 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:39:14,654 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:14,656 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:39:14,657 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:14,658 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:39:18,766 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:18,767 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:39:18,768 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:18,769 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:39:50,514 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:50,515 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:39:50,516 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:39:50,517 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:40:01,863 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:01,864 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:40:01,865 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:01,866 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:40:20,219 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:20,220 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:40:20,221 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:20,222 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 13:40:47,913 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:47,914 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 13:40:47,917 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 13:40:47,918 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:21:54,162 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:21:54,163 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:21:54,164 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:21:54,165 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:22:29,478 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:22:29,479 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:22:29,481 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:22:29,481 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:22:51,261 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:22:51,262 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:22:51,264 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:22:51,264 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:23:53,134 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:23:53,135 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:23:53,136 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:23:53,136 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:24:15,673 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:24:15,674 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:24:15,676 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:24:15,677 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:28:15,502 [Worker-53] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 14:28:15,897 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:28:15,899 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:28:15,901 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:28:15,902 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:28:15,902 [Worker-52] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 14:28:15,903 [Worker-52] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 14:28:16,191 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:29:25,580 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:29:25,581 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:29:25,582 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:29:25,583 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:34:54,872 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:34:54,874 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:34:54,875 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:34:54,876 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:35:10,506 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:35:10,507 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:35:10,508 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:35:10,508 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:35:36,365 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:35:36,366 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:35:36,368 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:35:36,368 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:36:17,436 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 14:36:17,770 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:36:17,771 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:36:17,772 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:36:17,773 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:36:17,773 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 14:36:17,773 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 14:36:17,780 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:32,059 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:32,069 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:39:32,076 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:32,077 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:39:42,988 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\HelloWorld\JWeb\CrowdFunding\crowdfunding
+2017-07-15 14:39:42,989 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2017-07-15 14:39:49,437 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:49,440 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:39:49,442 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:49,442 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:39:54,466 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 14:39:55,019 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:55,023 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 14:39:55,025 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:39:55,026 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:39:55,026 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 14:39:55,027 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 14:39:55,058 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:41:52,116 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:41:52,117 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:41:52,118 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:41:52,119 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:42:30,973 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:42:30,974 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:42:30,976 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:42:30,977 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:43:34,152 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:43:34,153 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:43:34,155 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:43:34,155 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 14:45:01,334 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:45:01,335 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 14:45:01,337 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 14:45:01,340 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:07:04,836 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:07:04,838 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:07:04,839 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:07:04,840 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:15:00,856 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:15:00,857 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:15:00,858 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:15:00,859 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:15:28,086 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:15:28,087 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:15:28,089 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:15:28,090 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:23:53,871 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:23:53,871 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:23:53,871 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:23:53,871 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:26:53,949 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:26:53,950 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:26:53,951 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:26:53,952 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:27:53,630 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:27:53,631 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:27:53,632 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:27:53,633 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:28:10,966 [Worker-58] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 15:28:11,276 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:28:11,277 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 15:28:11,278 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:28:11,279 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 15:28:11,279 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 15:28:11,279 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 15:28:11,286 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:28:46,866 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:28:46,867 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 15:28:46,872 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 15:28:46,873 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 19:55:47,226 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 19:55:47,256 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 19:55:47,265 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 19:55:47,266 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 19:59:52,294 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 19:59:52,299 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 19:59:52,300 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 19:59:52,301 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:00:11,283 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:00:11,284 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:00:11,285 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:00:11,286 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:04:57,113 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:04:57,114 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:04:57,116 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:04:57,117 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:07:53,668 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:07:53,669 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:07:53,670 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:07:53,674 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:08:11,632 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:08:11,633 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:08:11,646 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:08:11,647 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:08:58,991 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:08:58,991 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:08:58,993 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:08:58,993 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:10:28,446 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:10:28,447 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:10:28,448 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:10:28,449 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:10:30,615 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:10:30,617 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:10:30,618 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:10:30,618 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:12:57,961 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:12:57,970 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:12:57,972 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:12:57,972 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:13:56,136 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:13:56,136 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:13:56,137 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:13:56,138 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:14:27,107 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:14:27,108 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:14:27,110 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:14:27,110 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:15:51,306 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:15:51,306 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:15:51,307 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:15:51,310 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:16:10,345 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:10,348 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:16:10,352 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:10,352 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:16:12,739 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:12,740 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:16:12,741 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:12,742 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:16:16,637 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:16,637 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:16:16,639 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:16:16,640 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:17:13,624 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:17:13,625 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:17:13,628 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:17:13,629 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:18:43,994 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:18:43,995 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:18:43,996 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:18:43,996 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:18:50,691 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:18:50,692 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:18:50,693 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:18:50,694 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:19:38,765 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:19:38,766 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:19:38,767 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:19:38,768 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:20:56,859 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:20:56,861 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-15 20:20:56,863 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:20:56,863 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:21:25,024 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for crowdfunding
+2017-07-15 20:21:25,661 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:21:25,662 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-07-15 20:21:25,664 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-15 20:21:25,664 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\HelloWorld\JWeb\CrowdFunding\crowdfunding\src\test\resources
+2017-07-15 20:21:25,665 [Worker-54] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of crowdfunding
+2017-07-15 20:21:25,666 [Worker-54] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for crowdfunding
+2017-07-15 20:21:25,759 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!

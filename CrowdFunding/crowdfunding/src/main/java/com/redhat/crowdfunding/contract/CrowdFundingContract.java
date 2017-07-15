@@ -66,9 +66,8 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 	/**
 	 * ·¢ÆðÖÚ³ï
 	 */
-	public Future<TransactionReceipt> raiseFund(String owner) {
-		Function function = new Function("raiseFund", Arrays.asList(new Address(owner)),
-				Arrays.<TypeReference<?>>asList());
+	public Future<TransactionReceipt> raiseFund() {
+		Function function = new Function("raiseFund", Arrays.asList(), Arrays.<TypeReference<?>>asList());
 		return executeTransactionAsync(function);
 	}
 
