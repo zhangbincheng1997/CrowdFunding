@@ -1,8 +1,0 @@
-package com.redhat.crowdfunding.dao;
-
-/**
- * @author littleredhat
- */
-public interface CrowdFundingContract {
-
-}

@@ -17,13 +17,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- web3j -->
-		<dependency>
-			<groupId>org.web3j</groupId>
-			<artifactId>core</artifactId>
-			<version>2.1.0</version>
-		</dependency>
-
 		<!-- servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -32,18 +25,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- jstl -->
+		<!-- web3j -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-
-		<!-- standard -->
-		<dependency>
-			<groupId>taglibs</groupId>
-			<artifactId>standard</artifactId>
-			<version>1.1.2</version>
+			<groupId>org.web3j</groupId>
+			<artifactId>core</artifactId>
+			<version>2.2.2</version>
 		</dependency>
 
 		<!-- spring-mvc -->
@@ -51,6 +37,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.9.RELEASE</version>
+		</dependency>
+
+		<!-- fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.28</version>
 		</dependency>
 	</dependencies>
 	<build>

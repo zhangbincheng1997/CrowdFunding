@@ -19,10 +19,11 @@ import com.redhat.crowdfunding.util.Util;
 public class CrowdFundingServiceImpl implements CrowdFundingService {
 
 	private CrowdFundingContract contract;
+	private Credentials credentials;
 
 	public CrowdFundingServiceImpl() {
 		// 获得管理员凭证
-		Credentials credentials = Util.GetCredentials();
+		credentials = Util.GetCredentials();
 		if (credentials == null)
 			return;
 		// 获取合约
@@ -31,11 +32,21 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 
 	public CrowdFundingServiceImpl(String password, String content) {
 		// 获得发送者凭证
-		Credentials credentials = Util.GetCredentials(password, content);
+		credentials = Util.GetCredentials(password, content);
 		if (credentials == null)
 			return;
 		// 获取合约
 		contract = Util.GetCrowdFundingContract(credentials, Consts.ADDR);
+	}
+
+	/**
+	 * 获取数量
+	 * 
+	 * @throws ExecutionException
+	 * @throws InterruptedException
+	 */
+	public int getFundCount() throws InterruptedException, ExecutionException {
+		return contract.getFundCount().get().getValue().intValue();
 	}
 
 	/**
@@ -44,10 +55,12 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	 * @throws ExecutionException
 	 * @throws InterruptedException
 	 */
-	public List<Fund> getFunds() throws InterruptedException, ExecutionException {
+	public List<Fund> getFunds(int pageIndex) throws InterruptedException, ExecutionException {
 		List<Fund> fList = new ArrayList<Fund>();
 		int count = contract.getFundCount().get().getValue().intValue();
-		for (int i = 0; i < count; i++) {
+		int from = Consts.PAGE * pageIndex;
+		int to = Math.min(Consts.PAGE * (pageIndex + 1), count);
+		for (int i = from; i < to; i++) {
 			List<Type> info = contract.getFundInfo(i).get();
 			Fund fund = new Fund();
 			fund.setOwner(info.get(0).toString());
@@ -66,7 +79,7 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	 */
 	public boolean raiseFund() throws InterruptedException, ExecutionException {
 		if (contract != null) {
-			boolean res = contract.isExist(contract.getContractAddress()).get().getValue();
+			boolean res = contract.isExist(credentials.getAddress()).get().getValue();
 			if (!res) { // 不存在
 				contract.raiseFund();
 				return true;

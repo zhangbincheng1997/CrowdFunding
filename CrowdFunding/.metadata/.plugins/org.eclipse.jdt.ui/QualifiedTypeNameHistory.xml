@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.concurrent.CompletableFuture"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Type"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.generated.Uint256"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Utf8String"/>
@@ -33,10 +32,13 @@
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Util"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="com.redhat.crowdfunding.contract.CrowdFundingContract"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSON"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.bean.Page"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.contract.CrowdFundingContract"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

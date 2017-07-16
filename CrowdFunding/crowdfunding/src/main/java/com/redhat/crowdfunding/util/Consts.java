@@ -12,6 +12,8 @@ public class Consts {
 	public static BigInteger GAS_LIMIT = BigInteger.valueOf(4_300_000L);
 	// ETHER以太币
 	public static BigInteger ETHER = new BigInteger("1000000000000000000");
+	// 分页大小
+	public static int PAGE = 5;
 	// 临时文件前缀
 	public static String PREFIX = "key";
 	// 临时文件后缀

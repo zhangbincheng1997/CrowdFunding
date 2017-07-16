@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.fastjson.JSON;
 import com.redhat.crowdfunding.bean.Fund;
 import com.redhat.crowdfunding.service.CrowdFundingService;
 import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
@@ -20,13 +21,12 @@ import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
 @Controller
 public class CrowdFundingController {
 
-	@RequestMapping("getFunds")
-	public String getFunds(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("list")
+	public String List(HttpServletRequest request, HttpServletResponse response) {
 		CrowdFundingService service = new CrowdFundingServiceImpl();
 		try {
-			List<Fund> fList = service.getFunds();
-			request.setAttribute("fList", fList);
-			System.out.println(fList);
+			int totalNum = service.getFundCount();
+			request.setAttribute("totalNum", totalNum);
 			return "list";
 		} catch (InterruptedException | ExecutionException e) {
 			e.printStackTrace();
@@ -34,12 +34,26 @@ public class CrowdFundingController {
 		return "error";
 	}
 
+	@RequestMapping("getFunds")
+	@ResponseBody
+	public String getFunds(HttpServletRequest request, HttpServletResponse response) {
+		int pageIndex = Integer.parseInt(request.getParameter("pageIndex"));
+		CrowdFundingService service = new CrowdFundingServiceImpl();
+		try {
+			List<Fund> data = service.getFunds(pageIndex);
+			System.out.println(JSON.toJSONString(data));
+			return JSON.toJSONString(data);
+		} catch (InterruptedException | ExecutionException e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
+
 	@RequestMapping("raiseFund")
 	@ResponseBody
 	public boolean raiseFund(HttpServletRequest request, HttpServletResponse response) {
-		String content = request.getParameter("content");
 		String password = request.getParameter("password");
-		System.out.println(content + "  " + password);
+		String content = request.getParameter("content");
 		CrowdFundingService service = new CrowdFundingServiceImpl(password, content);
 		try {
 			return service.raiseFund();
@@ -56,7 +70,6 @@ public class CrowdFundingController {
 		int coin = Integer.parseInt(request.getParameter("coin"));
 		String password = request.getParameter("password");
 		String content = request.getParameter("content");
-		System.out.println(owner + "  " + coin + "  " + password + "  " + content);
 		CrowdFundingService service = new CrowdFundingServiceImpl(password, content);
 		try {
 			return service.sendCoin(owner, coin);

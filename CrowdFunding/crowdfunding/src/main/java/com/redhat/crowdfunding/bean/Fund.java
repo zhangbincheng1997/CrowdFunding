@@ -12,6 +12,15 @@ public class Fund {
 	// ряЁО╫П╠р
 	private int coin;
 
+	public Fund() {
+	}
+
+	public Fund(String owner, int number, int coin) {
+		this.owner = owner;
+		this.number = number;
+		this.coin = coin;
+	}
+
 	public String getOwner() {
 		return owner;
 	}

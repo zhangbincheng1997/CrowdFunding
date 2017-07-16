@@ -15,7 +15,7 @@ public class JCrowd {
 	public void getFunds() {
 		CrowdFundingServiceImpl service = new CrowdFundingServiceImpl();
 		try {
-			System.out.println(service.getFunds());
+			System.out.println(service.getFunds(1));
 		} catch (InterruptedException | ExecutionException e) {
 			e.printStackTrace();
 		}

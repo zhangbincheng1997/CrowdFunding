@@ -1,138 +1,119 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" isELIgnored="false"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+	pageEncoding="UTF-8"%>
 <html>
 <head>
 <title>众筹系统</title>
+<!-- 插件 -->
+<link rel="stylesheet" href="static/loading/loading.css">
+<link rel="stylesheet" href="static/pagination/pagination.css">
 <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
 <script type="text/javascript" src="static/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/pagination/pagination.js"></script>
+<script type="text/javascript" src="static/loading/loading.js"></script>
+<!-- 代码 -->
+<link rel="stylesheet" href="static/dist/list.css">
+<script type="text/javascript" src="static/dist/list.js"></script>
 </head>
 
-<style>
-body {
-	text-align: center;
-}
+<%
+	int totalNum = (int) request.getAttribute("totalNum");
+%>
 
-.table th, .table td {
-	text-align: center;
-	vertical-align: middle;
-}
-</style>
+<script type="text/javascript">
+	$(function() {
+		// 总记录
+		var totalNum = ${totalNum};
+		$("#pagination").pagination(totalNum, {
+			callback : pageCallback,
+			prev_text : '<<<',
+			next_text : '>>>',
+			ellipse_text : '...',
+			current_page : 0, // 当前选中的页面
+			items_per_page : 5, // 每页显示的条目数
+			num_display_entries : 4, // 连续分页主体部分显示的分页条目数
+			num_edge_entries : 1
+		// 两侧显示的首尾分页的条目数
+		});
 
-<script>
-	function select(owner) {
-		$('#owner').val(owner);
-	}
-
-	// 模态框1
-	function confirm() {
-		var owner = $.trim($('#owner').val());
-		var coin = $.trim($('#coin').val());
-		var password = $.trim($('#password').val());
-		var file = $.trim($('#file').val());
-		if (!owner || !coin || !password || !file) {
-			alert('信息不完善！');
-			return false;
+		function pageCallback(index, jq) {
+			// 清空表格
+			$("#table").empty();
+			get(index);
 		}
 
-		// 读取文件
-		var reader = new FileReader();
-		reader.readAsText(document.getElementById("file").files[0], "UTF-8");
-		reader.onload = function(e) {
-			var content = e.target.result;
+		function get(index) {
+			$
+					.ajax({
+						type : "POST",
+						dataType : "json",
+						url : 'getFunds',
+						data : {
+							"pageIndex" : index
+						},
+						beforeSend : function() {
+							// 显示loading
+							loading();
+						}, // beforeSend
+						success : function(data) {
+							// 后台返回结果为空
+							if ($.isEmptyObject(data)) {
+								$("#table").append(
+										'<p class="text-danger">暂无众筹</p>');
+							}
+							// 后台返回结果非空
+							else {
+								var tab = "";
 
-			// 异步提交
-			$.ajax({
-				url : "sendCoin",
-				type : "POST",
-				data : {
-					"owner" : owner,
-					"coin" : coin,
-					"password" : password,
-					"content" : content
-				},
-				beforeSend : function() {
-					$("#tip").html('<span style="color:blue">正在处理...</span>');
-					return true;
-				},
-				success : function(res) {
-					if (res) {
-						alert('操作成功');
-					} else {
-						alert('操作失败');
-					}
-					setTimeout(function() {
-						$("#myModal").modal('hide')
-					}, 1000);
-				}
-			});
-		};
-		return false;
-	}
+								// thead
+								tab += '<thead><tr>';
+								tab += '<th>编号</th>';
+								tab += '<th>众筹地址</th>';
+								tab += '<th>已筹人数</th>';
+								tab += '<th>已筹金币</th>';
+								tab += '<th>操作</th>';
+								tab += '<tr></thead>';
+								// tbody
+								tab += '<tbody>';
+								$
+										.each(
+												data,
+												function(i, fund) {
+													tab += '<tr>';
+													tab += '<td>' + i + '</td>';
+													tab += '<td>'
+															+ fund['owner']
+															+ '</td>';
+													tab += '<td>'
+															+ fund['number']
+															+ '</td>';
+													tab += '<td>'
+															+ fund['coin']
+															+ '</td>';
+													tab += '<td>'
+															+ '<button type="button" class="btn btn-primary btn-sm"'
+															+ 'data-toggle="modal" data-target="#myModal"'
+															+ 'onclick="select('
+															+ "'"
+															+ fund['owner']
+															+ "'"
+															+ ')">我要捐赠</button>'
+															+ '</td>';
+													tab += '</tr>';
+												});
+								tab += '</tbody>';
 
-	//模态框2
-	function confirm2() {
-		var password = $.trim($('#password2').val());
-		var file = $.trim($('#file2').val());
-		if (!password || !file) {
-			alert('信息不完善！');
-			return false;
+								$("#table").append(tab);
+							}
+						}, // success
+						complete : function() {
+							// 隐藏loading
+							removeLoading('loading');
+						} // complete
+					});
 		}
 
-		// 读取文件
-		var reader = new FileReader();
-		reader.readAsText(document.getElementById("file2").files[0], "UTF-8");
-		reader.onload = function(e) {
-			var content = e.target.result;
-
-			// 异步提交
-			$.ajax({
-				url : "raiseFund",
-				type : "POST",
-				data : {
-					"password" : password,
-					"content" : content
-				},
-				beforeSend : function() {
-					$("#tip2").html('<span style="color:blue">正在处理...</span>');
-					return true;
-				},
-				success : function(res) {
-					if (res) {
-						alert('操作成功');
-					} else {
-						alert('操作失败');
-					}
-					setTimeout(function() {
-						$("#myModal2").modal('hide')
-					}, 1000);
-				}
-			});
-		};
-		return false;
-	}
-
-	// 模态框1
-	$(function() {
-		$('#myModal').on('hide.bs.modal', function() {
-			$("#owner").val('');
-			$("#coin").val('');
-			$("#password").val('');
-			$("#file").val('');
-			$("#tip").html('<span id="tip"> </span>');
-		})
-	});
-
-	//模态框2
-	$(function() {
-		$('#myModal2').on('hide.bs.modal', function() {
-			$("#password2").val('');
-			$("#file2").val('');
-			$("#tip2").html('<span id="tip2"> </span>');
-		})
 	});
 </script>
 
@@ -142,36 +123,12 @@ body {
 
 			<h2 class="text-muted">众筹列表</h2>
 
-			<!-- 后台返回结果为空 -->
-			<c:if test="${ fn:length(fList) eq 0 }">
-				<p class="text-danger">暂无众筹</p>
-			</c:if>
-
-			<!-- 后台返回结果不为空 -->
-			<c:if test="${ fn:length(fList) gt 0 }">
-				<table class="table">
-					<thead>
-						<tr>
-							<th>众筹地址</th>
-							<th>已筹人数</th>
-							<th>已筹金币</th>
-							<th>操作</th>
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach items="${ fList }" var="fund">
-							<tr>
-								<td><c:out value="${ fund.owner }"></c:out></td>
-								<td><c:out value="${ fund.number }"></c:out></td>
-								<td><c:out value="${ fund.coin }"></c:out></td>
-								<td><button type="button" class="btn btn-primary btn-sm"
-										data-toggle="modal" data-target="#myModal"
-										onclick="select('${ fund.owner }')">我要捐赠</button></td>
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table>
-			</c:if>
+			<!-- 表格 -->
+			<table id="table" class="table"></table>
+			<!-- 加载 -->
+			<div id="loading"></div>
+			<!-- 分页 -->
+			<div id="pagination"></div>
 
 			<button type="button" class="btn btn-success btn-lg"
 				data-toggle="modal" data-target="#myModal2">我要众筹</button>
@@ -209,7 +166,7 @@ body {
 						<div class="form-group">
 							<label class="col-sm-2 control-label">密码</label>
 							<div class="col-sm-8">
-								<input type="text" class="form-control" id="password"
+								<input type="password" class="form-control" id="password"
 									name="password" />
 							</div>
 						</div>
@@ -251,7 +208,7 @@ body {
 						<div class="form-group">
 							<label class="col-sm-2 control-label">密码</label>
 							<div class="col-sm-8">
-								<input type="text" class="form-control" id="password2"
+								<input type="password" class="form-control" id="password2"
 									name="password2" />
 							</div>
 						</div>

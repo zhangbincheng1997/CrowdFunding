@@ -28,7 +28,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 
 	public CrowdFundingContract(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice,
 			BigInteger gasLimit) {
-		super(contractAddress, web3j, credentials, gasPrice, gasLimit);
+		super("", contractAddress, web3j, credentials, gasPrice, gasLimit);
 	}
 
 	/**

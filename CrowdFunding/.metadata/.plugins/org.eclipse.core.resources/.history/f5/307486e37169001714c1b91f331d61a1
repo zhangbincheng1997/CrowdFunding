@@ -1,0 +1,8 @@
+package com.redhat.crowdfunding.bean;
+
+/**
+ * @author littleredhat
+ */
+public class Page {
+
+}

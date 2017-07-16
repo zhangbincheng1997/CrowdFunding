@@ -1,8 +1,0 @@
-package com.redhat.crowdfunding.service;
-
-/**
- * @author littleredhat
- */
-public class CrowdFundingServiceImpl {
-
-}
