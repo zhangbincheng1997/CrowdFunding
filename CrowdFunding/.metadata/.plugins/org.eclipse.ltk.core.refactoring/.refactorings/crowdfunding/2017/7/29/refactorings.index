@@ -10,3 +10,8 @@
 1500208771942	Rename resource 'list2.js'
 1500209351393	Copy file
 1500211641612	Delete element
+1500274013793	Delete element
+1500274402775	Rename field 'ADDR'
+1500274449293	Rename field 'CROWDFUNDING_ADDR'
+1500282347133	Rename package 'com.redhat.crowdfunding.bean'
+1500283335113	Delete element

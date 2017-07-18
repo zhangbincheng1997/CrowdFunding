@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Type"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.generated.Uint256"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Utf8String"/>
-<fullyQualifiedTypeName name="org.web3j.tx.Contract"/>
 <fullyQualifiedTypeName name="org.web3j.abi.TypeReference"/>
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Function"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -21,13 +20,9 @@
 <fullyQualifiedTypeName name="org.web3j.crypto.Credentials"/>
 <fullyQualifiedTypeName name="org.web3j.protocol.http.HttpService"/>
 <fullyQualifiedTypeName name="org.web3j.protocol.Web3j"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="org.web3j.crypto.WalletUtils"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Util"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -41,4 +36,14 @@
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.bean.Page"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.contract.CrowdFundingContract"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.springframework.core.convert.Property"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.web3j.tx.Contract"/>
+<fullyQualifiedTypeName name="org.web3j.protocol.core.methods.response.TransactionReceipt"/>
 </qualifiedTypeNameHistroy>

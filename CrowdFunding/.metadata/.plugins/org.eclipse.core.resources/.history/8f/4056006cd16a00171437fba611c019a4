@@ -1,0 +1,26 @@
+package com.redhat.crowdfunding.junit;
+
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+
+import org.junit.Test;
+import org.web3j.crypto.CipherException;
+
+import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
+
+/**
+ * @author littleredhat
+ */
+public class JCrowd {
+
+	@Test
+	public void getFunds() {
+		CrowdFundingServiceImpl service;
+		try {
+			service = new CrowdFundingServiceImpl();
+			System.out.println(service.getFunds(0));
+		} catch (IOException | CipherException | InterruptedException | ExecutionException e) {
+			e.printStackTrace();
+		}
+	}
+}

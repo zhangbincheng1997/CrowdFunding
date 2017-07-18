@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="removeLoading" key="selection"/>
+		<item value="package com.redhat.crowdfunding.util;" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="package com.redhat.crowdfunding.util;"/>
 			<item value="removeLoading"/>
 		</list>
 		<list key="replacehistory">

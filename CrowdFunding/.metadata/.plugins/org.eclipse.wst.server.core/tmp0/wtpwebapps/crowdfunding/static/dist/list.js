@@ -67,43 +67,34 @@ function confirm() {
 
 // 模态框2
 function confirm2() {
-	var password = $.trim($('#password2').val());
-	var file = $.trim($('#file2').val());
-	if (!password || !file) {
+	var owner = $.trim($('#owner2').val());
+	if (!owner) {
 		alert('信息不完善！');
 		return false;
 	}
 
-	// 读取文件
-	var reader = new FileReader();
-	reader.readAsText(document.getElementById("file2").files[0], "UTF-8");
-	reader.onload = function(e) {
-		var content = e.target.result;
-
-		// 异步提交
-		$.ajax({
-			url : "raiseFund",
-			type : "POST",
-			data : {
-				"password" : password,
-				"content" : content
-			},
-			beforeSend : function() {
-				$("#tip2").html('<span style="color:blue">正在处理...</span>');
-				return true;
-			},
-			success : function(res) {
-				if (res) {
-					alert('操作成功');
-				} else {
-					alert('操作失败');
-				}
-				setTimeout(function() {
-					$("#myModal2").modal('hide')
-				}, 1000);
+	// 异步提交
+	$.ajax({
+		url : "raiseFund",
+		type : "POST",
+		data : {
+			"owner" : owner
+		},
+		beforeSend : function() {
+			$("#tip2").html('<span style="color:blue">正在处理...</span>');
+			return true;
+		},
+		success : function(res) {
+			if (res) {
+				alert('操作成功');
+			} else {
+				alert('操作失败');
 			}
-		});
-	};
+			setTimeout(function() {
+				$("#myModal2").modal('hide')
+			}, 1000);
+		}
+	});
 	return false;
 }
 
@@ -121,8 +112,7 @@ $(function() {
 // 模态框2
 $(function() {
 	$('#myModal2').on('hide.bs.modal', function() {
-		$("#password2").val('');
-		$("#file2").val('');
+		$("#owner2").val('');
 		$("#tip2").html('<span id="tip2"> </span>');
 	})
 });

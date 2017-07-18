@@ -1,16 +1,11 @@
 package com.redhat.crowdfunding.util;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 
-import org.web3j.crypto.CipherException;
 import org.web3j.crypto.Credentials;
-import org.web3j.crypto.WalletUtils;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
@@ -22,56 +17,19 @@ import com.redhat.crowdfunding.contract.CrowdFundingContract;
 public class Util {
 
 	/**
-	 * 读取钱包
+	 * 瀛樺偍鏂囦欢
 	 * 
-	 * @return
-	 */
-	private static String readWallet() {
-		try {
-			InputStream is = Util.class.getResourceAsStream(Consts.PATH);
-			InputStreamReader isReader = new InputStreamReader(is, "UTF-8");
-			BufferedReader bReader = new BufferedReader(isReader);
-			StringBuilder sb = new StringBuilder();
-			String line = null;
-			while ((line = bReader.readLine()) != null)
-				sb.append(line);
-			bReader.close();
-			isReader.close();
-			is.close();
-			return sb.toString();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
-	/**
-	 * 获取管理员凭证
-	 * 
-	 * @return
-	 */
-	public static Credentials GetCredentials() {
-		// 管理员凭证
-		return GetCredentials(Consts.PASSWORD, readWallet());
-	}
-
-	/**
-	 * 获取发送者凭证
-	 * 
-	 * @param password
-	 *            密钥密码
 	 * @param content
-	 *            密钥内容
 	 * @return
 	 */
-	public static Credentials GetCredentials(String password, String content) {
-		// 临时文件
+	public static File StoreFile(String content) {
+		// 涓存椂鏂囦欢
 		File tmp = null;
 		try {
 			tmp = File.createTempFile(Consts.PREFIX, Consts.SUFFIX);
-			// 自动删除
+			// 鑷姩鍒犻櫎
 			tmp.deleteOnExit();
-			// 写入内容
+			// 鍐欏叆鍐呭
 			BufferedWriter out = new BufferedWriter(new FileWriter(tmp));
 			out.write(content);
 			out.close();
@@ -79,18 +37,11 @@ public class Util {
 			e.printStackTrace();
 		}
 
-		// 发送者凭证
-		Credentials credentials = null;
-		try {
-			credentials = WalletUtils.loadCredentials(password, tmp);
-		} catch (IOException | CipherException e) {
-			e.printStackTrace();
-		}
-		return credentials;
+		return tmp;
 	}
 
 	/**
-	 * 众筹合约
+	 * 浼楃鍚堢害
 	 * 
 	 * @param credentials
 	 * @param contractAddress
@@ -99,9 +50,7 @@ public class Util {
 	public static CrowdFundingContract GetCrowdFundingContract(Credentials credentials, String contractAddress) {
 		// defaults to http://localhost:8545/
 		Web3j web3j = Web3j.build(new HttpService());
-		// 获取合约
-		CrowdFundingContract contract = new CrowdFundingContract(contractAddress, web3j, credentials, Consts.GAS_PRICE,
-				Consts.GAS_LIMIT);
-		return contract;
+		// 杩斿洖CrowdFunding鍚堢害
+		return new CrowdFundingContract(contractAddress, web3j, credentials, Consts.GAS_PRICE, Consts.GAS_LIMIT);
 	}
 }

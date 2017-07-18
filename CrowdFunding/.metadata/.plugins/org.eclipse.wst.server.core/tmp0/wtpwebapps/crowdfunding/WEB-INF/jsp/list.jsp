@@ -206,17 +206,10 @@
 				<div class="modal-body">
 					<form class="form-horizontal" role="form">
 						<div class="form-group">
-							<label class="col-sm-2 control-label">密码</label>
+							<label class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-8">
-								<input type="password" class="form-control" id="password2"
-									name="password2" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-2 control-label">密钥</label>
-							<div class="col-sm-8">
-								<input type="file" id="file2" name="file2" />
+								<input type="text" class="form-control" id="owner2"
+									name="owner2" />
 							</div>
 						</div>
 					</form>

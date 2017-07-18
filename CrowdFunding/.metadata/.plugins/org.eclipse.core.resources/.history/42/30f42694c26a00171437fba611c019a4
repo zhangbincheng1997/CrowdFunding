@@ -1,0 +1,6 @@
+# 钱包密码
+password = "123456";
+# 钱包路径
+path = "F:\\chain\\geth-win64\\chain\\keystore\\UTC--2017-05-03T17-48-46.721084800Z--6c97ea3f4f71669412aab8b7f705e253ce14064c";
+# 众筹合约地址
+crowdfundingaddr = "0x109c3E671EBc9C6A1C2b5fC8726E02Fbb1620Ad8";

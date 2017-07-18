@@ -3,22 +3,22 @@ package com.redhat.crowdfunding.service;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-import com.redhat.crowdfunding.bean.Fund;
+import com.redhat.crowdfunding.model.Fund;
 
 /**
  * @author littleredhat
  */
 public interface CrowdFundingService {
 
-	// »ñÈ¡ÊıÁ¿
+	// è·å–æ•°é‡
 	public int getFundCount() throws InterruptedException, ExecutionException;
 
-	// ÖÚ³ïÁĞ±í
+	// ä¼—ç­¹åˆ—è¡¨
 	public List<Fund> getFunds(int pageIndex) throws InterruptedException, ExecutionException;
 
-	// ·¢ÆğÖÚ³ï
-	public boolean raiseFund() throws InterruptedException, ExecutionException;
+	// å‘èµ·ä¼—ç­¹
+	public boolean raiseFund(String owner) throws InterruptedException, ExecutionException;
 
-	// ·¢ËÍ½ğ±Ò
+	// å‘é€é‡‘å¸
 	public boolean sendCoin(String owner, int coin) throws InterruptedException, ExecutionException;
 }

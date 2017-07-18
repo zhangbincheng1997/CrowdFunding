@@ -26,13 +26,27 @@ import com.redhat.crowdfunding.util.Consts;
  */
 public class CrowdFundingContract extends Contract implements CrowdFundingInterface {
 
+	/**
+	 * CrowdFundingåˆçº¦
+	 * 
+	 * @param contractAddress
+	 *            åˆçº¦åœ°å€
+	 * @param web3j
+	 *            JSON-RPCè¯·æ±‚æœåŠ¡å·¥å‚
+	 * @param credentials
+	 *            å‡­è¯
+	 * @param gasPrice
+	 *            gasä»·æ ¼
+	 * @param gasLimit
+	 *            gasä¸Šé™
+	 */
 	public CrowdFundingContract(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice,
 			BigInteger gasLimit) {
 		super("", contractAddress, web3j, credentials, gasPrice, gasLimit);
 	}
 
 	/**
-	 * ÖÚ³ïÊıÁ¿
+	 * è·å–æ•°é‡
 	 */
 	public Future<Uint256> getFundCount() {
 		Function function = new Function("getFundCount", Arrays.asList(),
@@ -42,7 +56,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 	}
 
 	/**
-	 * ÖÚ³ïĞÅÏ¢
+	 * è·å–ä¿¡æ¯
 	 */
 	public CompletableFuture<List<Type>> getFundInfo(int i) {
 		Function function = new Function("getFundInfo", Arrays.asList(new Uint256(BigInteger.valueOf(i))),
@@ -54,7 +68,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 	}
 
 	/**
-	 * ÊÇ·ñ´æÔÚ
+	 * æ˜¯å¦å­˜åœ¨
 	 */
 	public Future<Bool> isExist(String owner) {
 		Function function = new Function("isExist", Arrays.asList(new Address(owner)),
@@ -64,15 +78,16 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 	}
 
 	/**
-	 * ·¢ÆğÖÚ³ï
+	 * å‘èµ·ä¼—ç­¹
 	 */
-	public Future<TransactionReceipt> raiseFund() {
-		Function function = new Function("raiseFund", Arrays.asList(), Arrays.<TypeReference<?>>asList());
+	public Future<TransactionReceipt> raiseFund(String owner) {
+		Function function = new Function("raiseFund", Arrays.asList(new Address(owner)),
+				Arrays.<TypeReference<?>>asList());
 		return executeTransactionAsync(function);
 	}
 
 	/**
-	 * ·¢ËÍ½ğ±Ò
+	 * å‘é€é‡‘å¸
 	 */
 	public Future<TransactionReceipt> sendCoin(String owner, int coin) {
 		Function function = new Function("sendCoin", Arrays.asList(new Address(owner)),

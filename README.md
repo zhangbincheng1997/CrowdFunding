@@ -8,7 +8,7 @@
 
 2、Apache Tomcat
 
-3、Geth
+3、Ethereum Geth
 
 4、Ethereum Wallet
 
@@ -19,11 +19,11 @@
 
 3、更新Maven工程
 
-4、钱包部署CrowdFunding合约
+4、运行Geth、Wallet
 
-=>将合约地址复制到工程src/main/java/Consts.java里
+5、部署CrowdFunding合约
 
-=>将管理员密钥复制到工程src/main/resouces/wallet.txt里
+=> 修改src/main/resources/config.properties里的相关数据
  
 ## 其他注意  
 一、创建Maven工程失败

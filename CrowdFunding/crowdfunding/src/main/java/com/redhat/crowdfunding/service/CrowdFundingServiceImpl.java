@@ -1,15 +1,19 @@
 package com.redhat.crowdfunding.service;
 
+import java.io.File;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import org.web3j.abi.datatypes.Type;
+import org.web3j.crypto.CipherException;
 import org.web3j.crypto.Credentials;
+import org.web3j.crypto.WalletUtils;
 
-import com.redhat.crowdfunding.bean.Fund;
 import com.redhat.crowdfunding.contract.CrowdFundingContract;
+import com.redhat.crowdfunding.model.Fund;
 import com.redhat.crowdfunding.util.Consts;
 import com.redhat.crowdfunding.util.Util;
 
@@ -19,28 +23,22 @@ import com.redhat.crowdfunding.util.Util;
 public class CrowdFundingServiceImpl implements CrowdFundingService {
 
 	private CrowdFundingContract contract;
-	private Credentials credentials;
 
-	public CrowdFundingServiceImpl() {
-		// »ñµÃ¹ÜÀíÔ±Æ¾Ö¤
-		credentials = Util.GetCredentials();
-		if (credentials == null)
-			return;
-		// »ñÈ¡ºÏÔ¼
-		contract = Util.GetCrowdFundingContract(credentials, Consts.ADDR);
+	public CrowdFundingServiceImpl() throws IOException, CipherException {
+		// è·å–ç®¡ç†å‘˜å‡­è¯
+		Credentials credentials = WalletUtils.loadCredentials(Consts.PASSWORD, Consts.PATH);
+		contract = Util.GetCrowdFundingContract(credentials, Consts.CROWDFUNDING_ADDR);
 	}
 
-	public CrowdFundingServiceImpl(String password, String content) {
-		// »ñµÃ·¢ËÍÕßÆ¾Ö¤
-		credentials = Util.GetCredentials(password, content);
-		if (credentials == null)
-			return;
-		// »ñÈ¡ºÏÔ¼
-		contract = Util.GetCrowdFundingContract(credentials, Consts.ADDR);
+	public CrowdFundingServiceImpl(String password, String content) throws IOException, CipherException {
+		// è·å–ç”¨æˆ·å‡­è¯
+		File tmp = Util.StoreFile(content);
+		Credentials credentials = WalletUtils.loadCredentials(password, tmp);
+		contract = Util.GetCrowdFundingContract(credentials, Consts.CROWDFUNDING_ADDR);
 	}
 
 	/**
-	 * »ñÈ¡ÊıÁ¿
+	 * è·å–æ•°é‡
 	 * 
 	 * @throws ExecutionException
 	 * @throws InterruptedException
@@ -50,7 +48,7 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	}
 
 	/**
-	 * ÖÚ³ïÁĞ±í
+	 * ä¼—ç­¹åˆ—è¡¨
 	 * 
 	 * @throws ExecutionException
 	 * @throws InterruptedException
@@ -72,35 +70,31 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	}
 
 	/**
-	 * ·¢ÆğÖÚ³ï
+	 * å‘èµ·ä¼—ç­¹
 	 * 
 	 * @throws ExecutionException
 	 * @throws InterruptedException
 	 */
-	public boolean raiseFund() throws InterruptedException, ExecutionException {
-		if (contract != null) {
-			boolean res = contract.isExist(credentials.getAddress()).get().getValue();
-			if (!res) { // ²»´æÔÚ
-				contract.raiseFund();
-				return true;
-			}
+	public boolean raiseFund(String owner) throws InterruptedException, ExecutionException {
+		boolean res = contract.isExist(owner).get().getValue();
+		if (!res) { // ä¸å­˜åœ¨
+			contract.raiseFund(owner);
+			return true;
 		}
 		return false;
 	}
 
 	/**
-	 * ·¢ËÍ½ğ±Ò
+	 * å‘é€é‡‘å¸
 	 * 
 	 * @throws ExecutionException
 	 * @throws InterruptedException
 	 */
 	public boolean sendCoin(String owner, int coin) throws InterruptedException, ExecutionException {
-		if (contract != null) {
-			boolean res = contract.isExist(owner).get().getValue();
-			if (res) { // ´æÔÚ
-				contract.sendCoin(owner, coin);
-				return true;
-			}
+		boolean res = contract.isExist(owner).get().getValue();
+		if (res) { // å­˜åœ¨
+			contract.sendCoin(owner, coin);
+			return true;
 		}
 		return false;
 	}

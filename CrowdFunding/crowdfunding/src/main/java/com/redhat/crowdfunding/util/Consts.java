@@ -1,27 +1,57 @@
 package com.redhat.crowdfunding.util;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
+import java.nio.charset.Charset;
+import java.util.Properties;
 
 /**
  * @author littleredhat
  */
 public class Consts {
-	// Gas¼Û¸ñ
+
+	private static Properties p;
+
+	// è·å–æ•°æ®
+	public static String getData(String key) {
+		if (p == null) {
+			try {
+				p = readProperties();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return p.getProperty(key);
+	}
+
+	// è¯»å–é…ç½®
+	private static Properties readProperties() throws IOException {
+		Properties p = new Properties();
+		InputStream in = Consts.class.getResourceAsStream("/config.properties");
+		InputStreamReader r = new InputStreamReader(in, Charset.forName("UTF-8"));
+		p.load(r);
+		in.close();
+		return p;
+	}
+
+	// Gasä»·æ ¼
 	public static BigInteger GAS_PRICE = BigInteger.valueOf(20_000_000_000L);
-	// GasÉÏÏŞ
+	// Gasä¸Šé™
 	public static BigInteger GAS_LIMIT = BigInteger.valueOf(4_300_000L);
-	// ETHERÒÔÌ«±Ò
+	// ETHERä»¥å¤ªå¸
 	public static BigInteger ETHER = new BigInteger("1000000000000000000");
-	// ·ÖÒ³´óĞ¡
+	// åˆ†é¡µå¤§å°
 	public static int PAGE = 5;
-	// ÁÙÊ±ÎÄ¼şÇ°×º
+	// ä¸´æ—¶æ–‡ä»¶å‰ç¼€
 	public static String PREFIX = "key";
-	// ÁÙÊ±ÎÄ¼şºó×º
+	// ä¸´æ—¶æ–‡ä»¶åç¼€
 	public static String SUFFIX = ".tmp";
-	// Ç®°üÃÜÂë
-	public static String PASSWORD = "123456";
-	// Ç®°üÂ·¾¶
-	public static String PATH = "/wallet.txt";
-	// ºÏÔ¼µØÖ·
-	public static String ADDR = "0x109c3E671EBc9C6A1C2b5fC8726E02Fbb1620Ad8";
+	// é’±åŒ…å¯†ç 
+	public static String PASSWORD = getData("password");
+	// é’±åŒ…è·¯å¾„
+	public static String PATH = getData("path");
+	// ä¼—ç­¹æ™ºèƒ½åˆçº¦åœ°å€
+	public static String CROWDFUNDING_ADDR = getData("crowdfundingaddr");
 }

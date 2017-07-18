@@ -14,22 +14,22 @@ import org.web3j.protocol.core.methods.response.TransactionReceipt;
  */
 public interface CrowdFundingInterface {
 
-	/********** ·şÎñ **********/
+	/********** ç®¡ç†å‘˜ **********/
 
-	// ÖÚ³ïÊıÁ¿
+	// è·å–æ•°é‡
 	public Future<Uint256> getFundCount();
 
-	// ÖÚ³ïĞÅÏ¢
+	// è·å–ä¿¡æ¯
 	public CompletableFuture<List<Type>> getFundInfo(int i);
 
-	// ÊÇ·ñ´æÔÚ
+	// æ˜¯å¦å­˜åœ¨
 	public Future<Bool> isExist(String owner);
 
-	/********** ÓÃ»§ **********/
+	/********** ç”¨æˆ· **********/
 
-	// ·¢ÆğÖÚ³ï
-	public Future<TransactionReceipt> raiseFund();
+	// å‘èµ·ä¼—ç­¹
+	public Future<TransactionReceipt> raiseFund(String owner);
 
-	// ·¢ËÍ½ğ±Ò
+	// å‘é€é‡‘å¸
 	public Future<TransactionReceipt> sendCoin(String owner, int coin);
 }

@@ -53,6 +53,8 @@
 		<item value="false" key="FinalModifier"/>
 		<item value="10" key="LimitValue"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="BuildPathsPropertyPage">
 		<item value="0" key="pageIndex"/>
 	</section>
