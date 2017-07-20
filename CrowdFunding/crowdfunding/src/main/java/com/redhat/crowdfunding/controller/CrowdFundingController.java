@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutionException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,6 +16,7 @@ import org.web3j.crypto.CipherException;
 
 import com.alibaba.fastjson.JSON;
 import com.redhat.crowdfunding.model.Fund;
+import com.redhat.crowdfunding.pool.CrowdFundingServicePool;
 import com.redhat.crowdfunding.service.CrowdFundingService;
 import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
 
@@ -23,14 +26,22 @@ import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
 @Controller
 public class CrowdFundingController {
 
+	private static Logger logger = LoggerFactory.getLogger(CrowdFundingController.class);
+
 	@RequestMapping("list")
-	public String List(HttpServletRequest request, HttpServletResponse response) {
+	public String list(HttpServletRequest request, HttpServletResponse response) {
 		try {
-			CrowdFundingService service = new CrowdFundingServiceImpl();
+
+			// 获取对象
+			CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+			// 获取数量
 			int totalNum = service.getFundCount();
+			// 归还对象
+			CrowdFundingServicePool.returnObject(service);
+
 			request.setAttribute("totalNum", totalNum);
 			return "list";
-		} catch (IOException | CipherException | InterruptedException | ExecutionException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return "error";
@@ -40,12 +51,21 @@ public class CrowdFundingController {
 	@ResponseBody
 	public String getFunds(HttpServletRequest request, HttpServletResponse response) {
 		int pageIndex = Integer.parseInt(request.getParameter("pageIndex"));
+		logger.info("getFunds request : " + pageIndex);
+
 		try {
-			CrowdFundingService service = new CrowdFundingServiceImpl();
+
+			// 获取对象
+			CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+			// 获取列表
 			List<Fund> data = service.getFunds(pageIndex);
-			System.out.println("[getFunds] " + JSON.toJSONString(data)); // test
-			return JSON.toJSONString(data);
-		} catch (IOException | CipherException | InterruptedException | ExecutionException e) {
+			// 归还对象
+			CrowdFundingServicePool.returnObject(service);
+
+			String res = JSON.toJSONString(data);
+			logger.info("getFunds response : " + res);
+			return res;
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return "";
@@ -55,11 +75,20 @@ public class CrowdFundingController {
 	@ResponseBody
 	public boolean raiseFund(HttpServletRequest request, HttpServletResponse response) {
 		String owner = request.getParameter("owner");
-		System.out.println("[raiseFund] " + owner); // test
+		logger.info("raiseFund request : " + owner); // test
+
 		try {
-			CrowdFundingService service = new CrowdFundingServiceImpl();
-			return service.raiseFund(owner);
-		} catch (IOException | CipherException | InterruptedException | ExecutionException e) {
+
+			// 获取对象
+			CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+			// 发起众筹
+			boolean res = service.raiseFund(owner);
+			// 归还对象
+			CrowdFundingServicePool.returnObject(service);
+
+			logger.info("raiseFund response : " + res);
+			return res;
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
@@ -72,10 +101,16 @@ public class CrowdFundingController {
 		int coin = Integer.parseInt(request.getParameter("coin"));
 		String password = request.getParameter("password");
 		String content = request.getParameter("content");
-		System.out.println("[sendCoin] " + owner + " " + coin + " " + password + " " + content); // test
+		logger.info("sendCoin request : " + owner + " " + coin + " " + password + " " + content);
+
 		try {
+
+			// 这里不使用对象池
 			CrowdFundingService service = new CrowdFundingServiceImpl(password, content);
-			return service.sendCoin(owner, coin);
+			boolean res = service.sendCoin(owner, coin);
+
+			logger.info("sendCoin response : " + res);
+			return res;
 		} catch (IOException | CipherException | InterruptedException | ExecutionException e) {
 			e.printStackTrace();
 		}

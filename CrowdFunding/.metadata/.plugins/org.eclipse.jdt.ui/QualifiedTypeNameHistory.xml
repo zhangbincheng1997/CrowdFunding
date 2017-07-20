@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="org.web3j.abi.datatypes.Function"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.bean.Fund"/>
-<fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Consts"/>
 <fullyQualifiedTypeName name="org.web3j.utils.Async"/>
 <fullyQualifiedTypeName name="org.web3j.abi.FunctionEncoder"/>
 <fullyQualifiedTypeName name="com.redhat.crowdfunding.dao.CrowdFundingDaoImpl"/>
@@ -29,7 +28,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Ignore"/>
-<fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="com.alibaba.fastjson.JSON"/>
@@ -46,4 +44,11 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.web3j.tx.Contract"/>
 <fullyQualifiedTypeName name="org.web3j.protocol.core.methods.response.TransactionReceipt"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.util.Consts"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingService"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.service.CrowdFundingServiceImpl"/>
+<fullyQualifiedTypeName name="com.redhat.crowdfunding.pool.CrowdFundingServicePool"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
 </qualifiedTypeNameHistroy>

@@ -13,7 +13,7 @@ public interface CrowdFundingService {
 	// 获取数量
 	public int getFundCount() throws InterruptedException, ExecutionException;
 
-	// 众筹列表
+	// 获取列表
 	public List<Fund> getFunds(int pageIndex) throws InterruptedException, ExecutionException;
 
 	// 发起众筹

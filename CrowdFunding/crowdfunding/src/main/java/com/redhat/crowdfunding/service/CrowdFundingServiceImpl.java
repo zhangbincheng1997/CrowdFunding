@@ -25,13 +25,13 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	private CrowdFundingContract contract;
 
 	public CrowdFundingServiceImpl() throws IOException, CipherException {
-		// 获取管理员凭证
+		// 获取凭证
 		Credentials credentials = WalletUtils.loadCredentials(Consts.PASSWORD, Consts.PATH);
 		contract = Util.GetCrowdFundingContract(credentials, Consts.CROWDFUNDING_ADDR);
 	}
 
 	public CrowdFundingServiceImpl(String password, String content) throws IOException, CipherException {
-		// 获取用户凭证
+		// 获取凭证
 		File tmp = Util.StoreFile(content);
 		Credentials credentials = WalletUtils.loadCredentials(password, tmp);
 		contract = Util.GetCrowdFundingContract(credentials, Consts.CROWDFUNDING_ADDR);
@@ -48,17 +48,19 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 	}
 
 	/**
-	 * 众筹列表
+	 * 获取列表
 	 * 
 	 * @throws ExecutionException
 	 * @throws InterruptedException
 	 */
 	public List<Fund> getFunds(int pageIndex) throws InterruptedException, ExecutionException {
 		List<Fund> fList = new ArrayList<Fund>();
+		// getFundCount
 		int count = contract.getFundCount().get().getValue().intValue();
 		int from = Consts.PAGE * pageIndex;
 		int to = Math.min(Consts.PAGE * (pageIndex + 1), count);
 		for (int i = from; i < to; i++) {
+			// getFundInfo
 			List<Type> info = contract.getFundInfo(i).get();
 			Fund fund = new Fund();
 			fund.setOwner(info.get(0).toString());
