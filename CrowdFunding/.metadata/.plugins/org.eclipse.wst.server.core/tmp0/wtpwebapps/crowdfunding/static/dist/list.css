@@ -6,3 +6,9 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+.error {
+	font-weight: bold;
+	padding-left: 16px;
+	color: #EA5200;
+}

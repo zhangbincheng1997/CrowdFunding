@@ -1,8 +1,0 @@
-package com.redhat.crowdfunding.pool;
-
-/**
- * @author littleredhat
- */
-public class CrowdFundingServicePool {
-
-}

@@ -75,7 +75,7 @@ public class CrowdFundingController {
 	@ResponseBody
 	public boolean raiseFund(HttpServletRequest request, HttpServletResponse response) {
 		String owner = request.getParameter("owner");
-		logger.info("raiseFund request : " + owner); // test
+		logger.info("raiseFund request : " + owner);
 
 		try {
 

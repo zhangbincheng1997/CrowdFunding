@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
 <script type="text/javascript" src="static/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="static/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="static/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="static/validate/messages_zh.min.js"></script>
 <script type="text/javascript" src="static/pagination/pagination.js"></script>
 <script type="text/javascript" src="static/loading/loading.js"></script>
 <!-- 代码 -->
@@ -24,7 +27,7 @@
 <script type="text/javascript">
 	$(function() {
 		// 总记录
-		var totalNum = ${totalNum};
+		var totalNum = ${ totalNum };
 		$("#pagination").pagination(totalNum, {
 			callback : pageCallback,
 			prev_text : '<<<',
@@ -113,7 +116,6 @@
 						} // complete
 					});
 		}
-
 	});
 </script>
 
@@ -147,9 +149,9 @@
 				</div>
 
 				<div class="modal-body">
-					<form class="form-horizontal" role="form">
+					<form class="form-horizontal" role="form" id="myForm">
 						<div class="form-group">
-							<label class="col-sm-2 control-label">地址</label>
+							<label for="owner" class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-8">
 								<input type="text" class="form-control" id="owner" name="owner"
 									placeholder="0x..." readOnly />
@@ -157,14 +159,14 @@
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-2 control-label">金币</label>
+							<label for="coin" class="col-sm-2 control-label">金币</label>
 							<div class="col-sm-8">
 								<input type="text" class="form-control" id="coin" name="coin" />
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-2 control-label">密码</label>
+							<label for="password" class="col-sm-2 control-label">密码</label>
 							<div class="col-sm-8">
 								<input type="password" class="form-control" id="password"
 									name="password" />
@@ -172,7 +174,7 @@
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-2 control-label">密钥</label>
+							<label for="file" class="col-sm-2 control-label">钱包</label>
 							<div class="col-sm-8">
 								<input type="file" id="file" name="file" />
 							</div>
@@ -182,7 +184,7 @@
 
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="confirm()">确认</button>
+					<button type="button" class="btn btn-primary" id="confirm">确认</button>
 					<span id="tip"> </span>
 				</div>
 			</div>
@@ -204,9 +206,9 @@
 				</div>
 
 				<div class="modal-body">
-					<form class="form-horizontal" role="form">
+					<form class="form-horizontal" role="form" id="myForm2">
 						<div class="form-group">
-							<label class="col-sm-2 control-label">地址</label>
+							<label for="owner2" class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-8">
 								<input type="text" class="form-control" id="owner2"
 									name="owner2" />
@@ -217,7 +219,7 @@
 
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-					<button type="button" class="btn btn-primary" onclick="confirm2()">确认</button>
+					<button type="button" class="btn btn-primary" id="confirm2">确认</button>
 					<span id="tip2"> </span>
 				</div>
 			</div>
