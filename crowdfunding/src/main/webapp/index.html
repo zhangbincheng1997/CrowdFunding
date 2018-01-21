@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>众筹系统</title>
+    <!-- 插件 -->
+    <link rel="stylesheet" href="static/loading/loading.css">
+    <link rel="stylesheet" href="static/pagination/pagination.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="static/jquery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript"
+            src="static/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="static/validate/messages_zh.min.js"></script>
+    <script type="text/javascript" src="static/pagination/pagination.js"></script>
+    <script type="text/javascript" src="static/loading/loading.js"></script>
+    <!-- 代码 -->
+    <link rel="stylesheet" href="static/dist/list.css">
+    <script type="text/javascript" src="static/dist/list.js"></script>
+</head>
+
+<script type="text/javascript">
+    $(function () {
+        // 总记录
+        $.ajax({
+            type: 'GET',
+            url: 'list',
+            success: function (data) {
+                // 总数量
+                var totalNum = data;
+                $("#pagination").pagination(totalNum, {
+                    callback: pageCallback,
+                    prev_text: '<<<',
+                    next_text: '>>>',
+                    ellipse_text: '...',
+                    current_page: 0, // 当前选中的页面
+                    items_per_page: 5, // 每页显示的条目数
+                    num_display_entries: 4, // 连续分页主体部分显示的分页条目数
+                    num_edge_entries: 1 // 两侧显示的首尾分页的条目数
+                });
+            }, // success
+        });
+
+        function pageCallback(index, jq) {
+            // 清空表格
+            $("#table").empty();
+            get(index);
+        }
+
+        function get(index) {
+            $
+                .ajax({
+                    url: 'getFunds',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        'pageIndex': index,
+                        'pageSize': 5
+                    },
+                    beforeSend: function () {
+                        // 显示loading
+                        loading();
+                    }, // beforeSend
+                    success: function (data) {
+                        // 后台返回结果为空
+                        if ($.isEmptyObject(data)) {
+                            $("#table").append(
+                                '<p class="text-danger">暂无众筹</p>');
+                        }
+                        // 后台返回结果非空
+                        else {
+                            var tab = "";
+
+                            // thead
+                            tab += '<thead><tr>';
+                            tab += '<th>编号</th>';
+                            tab += '<th>众筹地址</th>';
+                            tab += '<th>众筹描述</th>';
+                            tab += '<th>众筹目标</th>';
+                            tab += '<th>已筹金币</th>';
+                            tab += '<th>已筹人数</th>';
+                            tab += '<th>状态</th>'; // 进行中　已结束
+                            tab += '<th>操作</th>'; // 我要众筹　查看记录
+                            tab += '<tr></thead>';
+                            // tbody
+                            tab += '<tbody>';
+                            $
+                                .each(
+                                    data,
+                                    function (i, fund) {
+                                        tab += '<tr>';
+                                        tab += '<td>' + +fund['fundIndex'] + '</td>';
+                                        tab += '<td>'
+                                            + fund['owner']
+                                            + '</td>';
+                                        tab += '<td>'
+                                            + fund['desc']
+                                            + '</td>';
+                                        tab += '<td>'
+                                            + fund['goal']
+                                            + '</td>';
+                                        tab += '<td>'
+                                            + fund['coins']
+                                            + '</td>';
+                                        tab += '<td>'
+                                            + fund['recordCounts']
+                                            + '</td>';
+                                        if (fund['finished']) {
+                                            tab += '<td>'
+                                                + '已结束'
+                                                + '</td>';
+                                            tab += '<td>'
+                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + 'data-toggle="modal" data-target="#myModal3"'
+                                                + 'onclick="select_record('
+                                                + "'"
+                                                + fund['fundIndex'] // 选中项目
+                                                + "'"
+                                                + ')">捐赠记录</button>'
+                                                + '</td>';
+                                        } else {
+                                            tab += '<td>'
+                                                + '进行中'
+                                                + '</td>';
+                                            tab += '<td>'
+                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + 'data-toggle="modal" data-target="#myModal2"'
+                                                + 'onclick="select_send('
+                                                + "'"
+                                                + fund['fundIndex'] // 选中项目
+                                                + "'"
+                                                + ')">我要捐赠</button>'
+                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + 'data-toggle="modal" data-target="#myModal3"'
+                                                + 'onclick="select_record('
+                                                + "'"
+                                                + fund['fundIndex'] // 选中项目
+                                                + "'"
+                                                + ')">捐赠记录</button>'
+                                                + '</td>';
+                                        }
+                                        tab += '</tr>';
+                                    });
+                            tab += '</tbody>';
+
+                            $("#funds").append(tab);
+                        }
+                    }, // success
+                    complete: function () {
+                        // 隐藏loading
+                        removeLoading('loading');
+                    } // complete
+                });
+        }
+    });
+</script>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+        <h2 class="text-muted">众筹列表</h2>
+
+        <!-- 众筹项目表格 -->
+        <table id="funds" class="table"></table>
+        <!-- 加载 -->
+        <div id="loading"></div>
+        <!-- 分页 -->
+        <div id="pagination"></div>
+
+        <button type="button" class="btn btn-success btn-lg"
+                data-toggle="modal" data-target="#myModal">我要众筹
+        </button>
+    </div>
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">发起众筹</h4>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="myForm">
+                    <div class="form-group">
+                        <label for="desc" class="col-sm-2 control-label">众筹描述</label>
+                        <div class="col-sm-8">
+                            <textarea rows="3" class="form-control" id="desc"
+                                      name="desc"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal" class="col-sm-2 control-label">众筹目标</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="goal"
+                                   name="goal"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="password"
+                                   name="password"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file" class="col-sm-2 control-label">钱包</label>
+                        <div class="col-sm-8">
+                            <input type="file" id="file" name="file"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="confirm">确认</button>
+                <span id="tip"> </span>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- 模态框2（Modal） -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">发送金币</h4>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="myForm2">
+                    <div class="form-group">
+                        <label for="fundIndex2" class="col-sm-2 control-label">项目编号</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="fundIndex2" name="fundIndex2"
+                                   placeholder="0..." readOnly/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coin2" class="col-sm-2 control-label">金币</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="coin2" name="coin2"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password2" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="password2"
+                                   name="password2"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file2" class="col-sm-2 control-label">钱包</label>
+                        <div class="col-sm-8">
+                            <input type="file" id="file2" name="file2"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="confirm2">确认</button>
+                <span id="tip2"> </span>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- 模态框3（Modal） -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel3">捐赠记录</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- 捐赠记录表格 -->
+                <table id="records" class="table"></table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+                <span id="tip3"> </span>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+</body>
+</html>
