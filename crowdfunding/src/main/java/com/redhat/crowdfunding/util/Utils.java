@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * @author littleredhat
  */
-public class Util {
+public class Utils {
 
     /**
      * 将 客户端钱包内容 存储为 服务端钱包文件

@@ -30,7 +30,7 @@ public class CrowdFundingController {
         try {
 
             // 获取对象
-            CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+            CrowdFundingService service = CrowdFundingServicePool.borrowObject(); // 对象池加载服务 加快返回响应速度
             // 获取数量
             int totalNum = service.getFundCount();
             // 归还对象
@@ -53,7 +53,7 @@ public class CrowdFundingController {
         try {
 
             // 获取对象
-            CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+            CrowdFundingService service = CrowdFundingServicePool.borrowObject(); // 对象池加载服务 加快返回响应速度
             // 获取列表
             List<Fund> data = service.getFunds(pageIndex, pageSize);
             // 归还对象
@@ -77,7 +77,7 @@ public class CrowdFundingController {
         try {
 
             // 获取对象
-            CrowdFundingService service = CrowdFundingServicePool.borrowObject();
+            CrowdFundingService service = CrowdFundingServicePool.borrowObject(); // 对象池加载服务 加快返回响应速度
             // 获取列表
             List<Record> data = service.getRecords(fundIndex);
             // 归还对象
@@ -104,7 +104,7 @@ public class CrowdFundingController {
 
         try {
 
-            // 这里不使用对象池 因为合约依赖客户端发来的钱包
+            // 这里不使用对象池 因为合约依赖客户端上传的钱包
             CrowdFundingService service = new CrowdFundingServiceImpl(password, content);
             // 发起众筹
             service.raiseFund(desc, goal);
@@ -129,7 +129,7 @@ public class CrowdFundingController {
 
         try {
 
-            // 这里不使用对象池 因为合约依赖客户端发来的钱包
+            // 这里不使用对象池 因为合约依赖客户端上传的钱包
             CrowdFundingService service = new CrowdFundingServiceImpl(password, content);
             // 发送金币
             service.sendCoin(fundIndex, coin);

@@ -1,16 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta charset=utf-8/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>众筹系统</title>
     <!-- 插件 -->
     <link rel="stylesheet" href="static/loading/loading.css">
     <link rel="stylesheet" href="static/pagination/pagination.css">
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
     <script type="text/javascript" src="static/jquery/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="static/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript"
-            src="static/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="static/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/validate/jquery.validate.min.js"></script>
     <script type="text/javascript" src="static/validate/messages_zh.min.js"></script>
     <script type="text/javascript" src="static/pagination/pagination.js"></script>
     <script type="text/javascript" src="static/loading/loading.js"></script>
@@ -74,11 +73,9 @@
                             // thead
                             tab += '<thead><tr>';
                             tab += '<th>编号</th>';
-                            tab += '<th>众筹地址</th>';
-                            tab += '<th>众筹描述</th>';
-                            tab += '<th>众筹目标</th>';
-                            tab += '<th>已筹金币</th>';
-                            tab += '<th>已筹人数</th>';
+                            tab += '<th>地址</th>';
+                            tab += '<th>描述</th>';
+                            tab += '<th>进度</th>';
                             tab += '<th>状态</th>'; // 进行中　已结束
                             tab += '<th>操作</th>'; // 我要众筹　查看记录
                             tab += '<tr></thead>';
@@ -94,23 +91,21 @@
                                             + fund['owner']
                                             + '</td>';
                                         tab += '<td>'
-                                            + fund['desc']
+                                            + '<button type="button" class="btn btn-default btn-sm" title="众筹描述"'
+                                            + 'data-container="body" data-toggle="popover" data-placement="left"'
+                                            + 'data-content="' + fund['desc'] + '">'
+                                            + fund['desc'].substring(0, 20) + '...'
+                                            + '</button>'
                                             + '</td>';
                                         tab += '<td>'
-                                            + fund['goal']
-                                            + '</td>';
-                                        tab += '<td>'
-                                            + fund['coins']
-                                            + '</td>';
-                                        tab += '<td>'
-                                            + fund['recordCounts']
+                                            + fund['coins'] + ' / ' + fund['goal']
                                             + '</td>';
                                         if (fund['finished']) {
                                             tab += '<td>'
-                                                + '已结束'
+                                                + '<span class="label label-danger">已结束</span>'
                                                 + '</td>';
                                             tab += '<td>'
-                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + '<button type="button" class="btn btn-warning btn-xs"'
                                                 + 'data-toggle="modal" data-target="#myModal3"'
                                                 + 'onclick="select_record('
                                                 + "'"
@@ -120,17 +115,17 @@
                                                 + '</td>';
                                         } else {
                                             tab += '<td>'
-                                                + '进行中'
+                                                + '<span class="label label-success">进行中</span>'
                                                 + '</td>';
                                             tab += '<td>'
-                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + '<button type="button" class="btn btn-primary btn-xs"'
                                                 + 'data-toggle="modal" data-target="#myModal2"'
                                                 + 'onclick="select_send('
                                                 + "'"
                                                 + fund['fundIndex'] // 选中项目
                                                 + "'"
                                                 + ')">我要捐赠</button>'
-                                                + '<button type="button" class="btn btn-primary btn-sm"'
+                                                + '<button type="button" class="btn btn-warning btn-xs"'
                                                 + 'data-toggle="modal" data-target="#myModal3"'
                                                 + 'onclick="select_record('
                                                 + "'"
@@ -144,6 +139,7 @@
                             tab += '</tbody>';
 
                             $("#funds").append(tab);
+                            $("[data-toggle='popover']").popover();
                         }
                     }, // success
                     complete: function () {
@@ -171,6 +167,7 @@
         <button type="button" class="btn btn-success btn-lg"
                 data-toggle="modal" data-target="#myModal">我要众筹
         </button>
+
     </div>
 </div>
 
@@ -189,7 +186,7 @@
             <div class="modal-body">
                 <form class="form-horizontal" role="form" id="myForm">
                     <div class="form-group">
-                        <label for="desc" class="col-sm-2 control-label">众筹描述</label>
+                        <label for="desc" class="col-sm-2 control-label">描述</label>
                         <div class="col-sm-8">
                             <textarea rows="3" class="form-control" id="desc"
                                       name="desc"></textarea>
@@ -197,10 +194,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="goal" class="col-sm-2 control-label">众筹目标</label>
+                        <label for="goal" class="col-sm-2 control-label">目标</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="goal"
-                                   name="goal"/>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="goal"
+                                       name="goal"/>
+                                <span class="input-group-addon">ETH</span>
+                            </div>
                         </div>
                     </div>
 
@@ -248,7 +248,7 @@
             <div class="modal-body">
                 <form class="form-horizontal" role="form" id="myForm2">
                     <div class="form-group">
-                        <label for="fundIndex2" class="col-sm-2 control-label">项目编号</label>
+                        <label for="fundIndex2" class="col-sm-2 control-label">编号</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="fundIndex2" name="fundIndex2"
                                    placeholder="0..." readOnly/>
@@ -258,7 +258,11 @@
                     <div class="form-group">
                         <label for="coin2" class="col-sm-2 control-label">金币</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="coin2" name="coin2"/>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="coin2"
+                                       name="coin2"/>
+                                <span class="input-group-addon">ETH</span>
+                            </div>
                         </div>
                     </div>
 
@@ -309,7 +313,7 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
                 <span id="tip3"> </span>
             </div>
         </div>

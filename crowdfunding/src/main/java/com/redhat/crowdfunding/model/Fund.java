@@ -20,20 +20,16 @@ public class Fund {
     // 是否结束
     private boolean finished;
 
-    // 捐赠人数
-    private int recordCounts;
-
     public Fund() {
     }
 
-    public Fund(int fundIndex, String owner, String desc, int goal, int coins, boolean finished, int recordCounts) {
+    public Fund(int fundIndex, String owner, String desc, int goal, int coins, boolean finished) {
         this.fundIndex = fundIndex;
         this.owner = owner;
         this.desc = desc;
         this.goal = goal;
         this.coins = coins;
         this.finished = finished;
-        this.recordCounts = recordCounts;
     }
 
     public int getFundIndex() {
@@ -84,14 +80,6 @@ public class Fund {
         this.finished = finished;
     }
 
-    public int getRecordCounts() {
-        return recordCounts;
-    }
-
-    public void setRecordCounts(int recordCounts) {
-        this.recordCounts = recordCounts;
-    }
-
     @Override
     public String toString() {
         return "Fund{" +
@@ -101,7 +89,6 @@ public class Fund {
                 ", goal=" + goal +
                 ", coins=" + coins +
                 ", finished=" + finished +
-                ", recordCounts=" + recordCounts +
                 '}';
     }
 }

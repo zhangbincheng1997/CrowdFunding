@@ -37,8 +37,7 @@ function select_record(fundIndex) {
         success: function (data) {
             // 后台返回结果为空
             if ($.isEmptyObject(data)) {
-                $("#records").html(
-                    '<p class="text-danger">暂无捐赠</p>');
+                $("#records").html('<p class="text-danger">暂无捐赠</p>');
             }
             // 后台返回结果非空
             else {
@@ -69,7 +68,7 @@ function select_record(fundIndex) {
                                 + '</td>';
                             // yyyy/MM/dd
                             var date = new Date();
-                            date.setTime(fund['time']*1000);
+                            date.setTime(fund['time'] * 1000);
                             tab += '<td>'
                                 + date.toLocaleDateString()
                                 + '</td>';
@@ -92,9 +91,7 @@ $(function () {
             if ($("#myForm").valid()) {
                 // 读取文件
                 var reader = new FileReader();
-                reader.readAsText(
-                    document.getElementById("file").files[0],
-                    "UTF-8");
+                reader.readAsText(document.getElementById("file").files[0], "UTF-8");
                 reader.onload = function (e) {
                     var content = e.target.result;
 
@@ -139,7 +136,7 @@ $(function () {
                 },
                 goal: {
                     required: true,
-                    minlength: 1
+                    range: [1, 1000]
                 },
                 password: {
                     required: true
@@ -150,12 +147,12 @@ $(function () {
             },
             messages: {
                 desc: {
-                    required: "请输入众筹描述",
-                    rangelength: "众筹描述不合法"
+                    required: "请输入描述",
+                    rangelength: "描述不合法"
                 },
                 goal: {
-                    required: "请输入众筹目标",
-                    minlength: "众筹目标不合法"
+                    required: "请输入目标",
+                    range: "目标不合法"
                 },
                 password: {
                     required: '请输入密码',
@@ -169,9 +166,7 @@ $(function () {
             },
             errorPlacement: function (error, element) {
                 // Append error within linked label
-                $(element).closest("form").find(
-                    "label[for='" + element.attr("id") + "']").append(
-                    error);
+                $(element).closest("form").find("label[for='" + element.attr("id") + "']").append(error);
             }
         })
 
@@ -196,40 +191,35 @@ $(function () {
                 if ($("#myForm2").valid()) {
                     // 读取文件
                     var reader = new FileReader();
-                    reader.readAsText(
-                        document.getElementById("file2").files[0],
-                        "UTF-8");
+                    reader.readAsText(document.getElementById("file2").files[0], "UTF-8");
                     reader.onload = function (e) {
                         var content = e.target.result;
 
                         // 异步提交
-                        $
-                            .ajax({
-                                url: "sendCoin",
-                                type: "POST",
-                                data: {
-                                    "fundIndex": $("#fundIndex2").val(),
-                                    "coin": $("#coin2").val(),
-                                    "password": $("#password2").val(),
-                                    "content": content
-                                },
-                                beforeSend: function () {
-                                    $("#tip2")
-                                        .html(
-                                            '<span style="color:blue">正在处理...</span>');
-                                    return true;
-                                },
-                                success: function (res) {
-                                    if (res) {
-                                        alert('操作成功');
-                                    } else {
-                                        alert('操作失败');
-                                    }
-                                    setTimeout(function () {
-                                        $("#myModal2").modal('hide')
-                                    }, 1000);
+                        $.ajax({
+                            url: "sendCoin",
+                            type: "POST",
+                            data: {
+                                "fundIndex": $("#fundIndex2").val(),
+                                "coin": $("#coin2").val(),
+                                "password": $("#password2").val(),
+                                "content": content
+                            },
+                            beforeSend: function () {
+                                $("#tip2").html('<span style="color:blue">正在处理...</span>');
+                                return true;
+                            },
+                            success: function (res) {
+                                if (res) {
+                                    alert('操作成功');
+                                } else {
+                                    alert('操作失败');
                                 }
-                            });
+                                setTimeout(function () {
+                                    $("#myModal2").modal('hide')
+                                }, 1000);
+                            }
+                        });
                     };
                     return false;
                 }
@@ -241,7 +231,7 @@ $(function () {
             rules: {
                 coin2: {
                     required: true,
-                    minlength: 1
+                    range: [1, 1000]
                 },
                 password2: {
                     required: true,
@@ -253,7 +243,7 @@ $(function () {
             messages: {
                 coin2: {
                     required: "请输入金币",
-                    minlength: "金币不合法"
+                    range: "金币不合法"
                 },
                 password2: {
                     required: '请输入密码',
@@ -267,9 +257,7 @@ $(function () {
             },
             errorPlacement: function (error, element) {
                 // Append error within linked label
-                $(element).closest("form").find(
-                    "label[for='" + element.attr("id") + "']").append(
-                    error);
+                $(element).closest("form").find("label[for='" + element.attr("id") + "']").append(error);
             }
         })
 

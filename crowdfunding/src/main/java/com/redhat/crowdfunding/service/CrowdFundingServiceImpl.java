@@ -4,7 +4,7 @@ import com.redhat.crowdfunding.contract.CrowdFundingContract;
 import com.redhat.crowdfunding.model.Fund;
 import com.redhat.crowdfunding.model.Record;
 import com.redhat.crowdfunding.util.Consts;
-import com.redhat.crowdfunding.util.Util;
+import com.redhat.crowdfunding.util.Utils;
 import org.web3j.abi.datatypes.Type;
 import org.web3j.crypto.CipherException;
 import org.web3j.crypto.Credentials;
@@ -37,7 +37,7 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
 
     public CrowdFundingServiceImpl(String password, String content) throws IOException, CipherException {
         // 获取凭证
-        File tmp = Util.StoreFile(content);
+        File tmp = Utils.StoreFile(content); // 从客户端上传的钱包
         Credentials credentials = WalletUtils.loadCredentials(password, tmp);
         // defaults to http://localhost:8545/
         Web3j web3j = Web3j.build(new HttpService());
@@ -78,7 +78,6 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
             fund.setGoal(Integer.parseInt(finfo.get(2).getValue().toString()));
             fund.setCoins(new BigInteger(finfo.get(3).getValue().toString()).divide(Convert.Unit.ETHER.getWeiFactor().toBigInteger()).intValue());
             fund.setFinished(Boolean.parseBoolean(finfo.get(4).getValue().toString()));
-            fund.setRecordCounts(Integer.parseInt(finfo.get(5).getValue().toString()));
             fList.add(fund);
         }
         Collections.reverse(fList); // 按照项目编号降序排序
@@ -117,7 +116,7 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
      * @throws Exception
      */
     public void raiseFund(String desc, int goal) {
-        contract.raiseFund(desc, goal).sendAsync();
+        contract.raiseFund(desc, goal).sendAsync(); // 异步请求事务 加快返回响应速度
     }
 
     /**
@@ -128,6 +127,6 @@ public class CrowdFundingServiceImpl implements CrowdFundingService {
      * @throws Exception
      */
     public void sendCoin(int fundIndex, int coin) {
-        contract.sendCoin(fundIndex, coin).sendAsync();
+        contract.sendCoin(fundIndex, coin).sendAsync(); // 异步请求事务 加快返回响应速度
     }
 }

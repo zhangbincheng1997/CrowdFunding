@@ -1,14 +1,14 @@
 body {
-	text-align: center;
+    text-align: center;
 }
 
 .table th, .table td {
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .error {
-	font-weight: bold;
-	padding-left: 16px;
-	color: #EA5200;
+    font-weight: bold;
+    padding-left: 16px;
+    color: #EA5200;
 }

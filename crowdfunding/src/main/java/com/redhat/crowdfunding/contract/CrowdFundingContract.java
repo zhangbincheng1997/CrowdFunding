@@ -84,7 +84,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 
     /**
      * 获取众筹项目信息
-     * function getFundInfo(uint fundIndex) public view returns (address, string, uint, uint, bool, uint)
+     * function getFundInfo(uint fundIndex) public view returns (address, string, uint, uint, bool)
      */
     public RemoteCall<List<Type>> getFundInfo(int fundIndex) {
         Function function = new Function("getFundInfo", Arrays.<Type>asList(new Uint256(fundIndex)),
@@ -93,7 +93,6 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
                 }, new TypeReference<Uint256>() {
                 }, new TypeReference<Uint256>() {
                 }, new TypeReference<Bool>() {
-                }, new TypeReference<Uint256>() {
                 }));
         return executeRemoteCallMultipleValueReturn(function);
     }
@@ -124,7 +123,7 @@ public class CrowdFundingContract extends Contract implements CrowdFundingInterf
 
     /**
      * 为自己发起众筹
-     * function raiseFund(string info, uint goal) public
+     * function raiseFund(string desc, uint goal) public
      */
     public RemoteCall<TransactionReceipt> raiseFund(String desc, int goal) {
         Function function = new Function("raiseFund", Arrays.<Type>asList(new Utf8String(desc), new Uint256(goal)),
