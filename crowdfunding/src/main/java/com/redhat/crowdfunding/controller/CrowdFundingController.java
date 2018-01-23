@@ -6,8 +6,7 @@ import com.redhat.crowdfunding.model.Record;
 import com.redhat.crowdfunding.pool.CrowdFundingServicePool;
 import com.redhat.crowdfunding.service.CrowdFundingService;
 import com.redhat.crowdfunding.service.CrowdFundingServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.redhat.crowdfunding.util.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,8 +20,6 @@ import java.util.List;
  */
 @Controller
 public class CrowdFundingController {
-
-    private static Logger logger = LoggerFactory.getLogger(CrowdFundingController.class);
 
     @RequestMapping("list")
     @ResponseBody
@@ -48,7 +45,7 @@ public class CrowdFundingController {
     public String getFunds(HttpServletRequest request, HttpServletResponse response) {
         int pageIndex = Integer.parseInt(request.getParameter("pageIndex"));
         int pageSize = Integer.parseInt(request.getParameter("pageSize"));
-        logger.info("getFunds request : " + pageIndex + " " + pageSize);
+        Log.info(pageIndex + " " + pageSize); // log test
 
         try {
 
@@ -60,10 +57,11 @@ public class CrowdFundingController {
             CrowdFundingServicePool.returnObject(service);
 
             String res = JSON.toJSONString(data);
-            logger.info("getFunds response : " + res);
+            Log.info(res); // log test
+
             return res;
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error(e.getMessage());
         }
         return "";
     }
@@ -72,7 +70,7 @@ public class CrowdFundingController {
     @ResponseBody
     public String getRecords(HttpServletRequest request, HttpServletResponse response) {
         int fundIndex = Integer.parseInt(request.getParameter("fundIndex"));
-        logger.info("getRecords request : " + fundIndex);
+        Log.info(fundIndex); // log test
 
         try {
 
@@ -84,10 +82,10 @@ public class CrowdFundingController {
             CrowdFundingServicePool.returnObject(service);
 
             String res = JSON.toJSONString(data);
-            logger.info("getRecords response : " + res);
+            Log.info(res); // log test
             return res;
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error(e.getMessage());
         }
         return "";
     }
@@ -100,7 +98,7 @@ public class CrowdFundingController {
         // sender
         String password = request.getParameter("password");
         String content = request.getParameter("content");
-        logger.info("raiseFund request : " + desc + " " + goal + " " + password + " " + content); // test log
+        Log.info(desc + " " + goal + " " + password + " " + content);  // log test
 
         try {
 
@@ -109,10 +107,9 @@ public class CrowdFundingController {
             // 发起众筹
             service.raiseFund(desc, goal);
 
-            logger.info("raiseFund response : " + "success");
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error(e.getMessage());
         }
         return false;
     }
@@ -125,7 +122,7 @@ public class CrowdFundingController {
         // sender
         String password = request.getParameter("password");
         String content = request.getParameter("content");
-        logger.info("sendCoin request : " + fundIndex + " " + coin + " " + password + " " + content); // test log
+        Log.info(fundIndex + " " + coin + " " + password + " " + content);  // log test
 
         try {
 
@@ -134,10 +131,9 @@ public class CrowdFundingController {
             // 发送金币
             service.sendCoin(fundIndex, coin);
 
-            logger.info("sendCoin response : " + "success");
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error(e.getMessage());
         }
         return false;
     }
