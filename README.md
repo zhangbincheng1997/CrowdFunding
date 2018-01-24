@@ -13,6 +13,7 @@ https://github.com/littleredhat1997/Ethereum
 ![alt text](docs/3.png "title")
 4. 众筹项目
 ![alt text](docs/4.png "title")
+其它注意：钱包要有钱(支付gas) 记得挖矿 等待确认 ......
 
 ## 项目环境
 1. IntelliJ IDEA 2017 (org.apache.maven.archetypes:maven-archetype-webapp)
