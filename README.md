@@ -29,6 +29,16 @@ https://github.com/littleredhat1997/Ethereum
 ```
 ![alt text](docs/5.png "title")
 ![alt text](docs/6.png "title")
+```
+# 解锁用户
+personal.unlockAccount(eth.account[0])
+# 复制代码 https://remix.ethereum.org/ Compile - Details - WEB3DEPLOY 到 geth
+var helloworldContract = web3.eth.contract(......);
+var helloworld = helloworldContract.new(......)
+# 输出地址 contract=0x......
+INFO [MM-dd|HH:mm:ss] Submitted contract creation              fullhash=0x...... contract=0x......
+# 记得挖矿 等待确认 ......
+```
 2. 导入 crowdfunding 工程
 ```
 File -> new -> Module from Existing Sources... -> 选中pom.xml文件 -> 一直next
