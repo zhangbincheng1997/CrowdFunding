@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>CrowdFunding</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body class="container">
+<h2>CREATE</h2>
+<form class="form-horizontal" role="form" method="POST" action="/create" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="content" class="col-sm-2 control-label">内容</label>
+        <div class="col-sm-8">
+            <textarea rows="3" class="form-control" id="content" name="content"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="goal" class="col-sm-2 control-label">目标</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <input type="text" class="form-control" id="goal" name="goal"/>
+                <span class="input-group-addon">ETH</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-8">
+            <input type="password" class="form-control" id="password" name="password"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="file" class="col-sm-2 control-label">钱包</label>
+        <div class="col-sm-8">
+            <input type="file" id="file" name="file"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="reset" class="btn btn-default">重置</button>
+            <button type="submit" class="btn btn-primary">确认</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

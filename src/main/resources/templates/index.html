@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>CrowdFunding</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body class="container">
+<br/>
+<h1>众筹列表</h1>
+<a href="/create" type="button" class="btn btn-info">I Need Help</a>
+<table class="table">
+    <caption>只要人人都献出一点爱，世界将变成美好的人间！</caption>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>内容</th>
+        <th>进度</th>
+        <th>次数</th>
+        <th>地址</th>
+        <th>时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="c_tbody">
+    <!--<tr>-->
+    <!--    <td>0</td>-->
+    <!--    <td>山区儿童温饱计划</td>-->
+    <!--    <td>50 / 100</td>-->
+    <!--    <td>2</td>-->
+    <!--    <td>0x......</td>-->
+    <!--    <td>2020-08-08 00:00:00</td>-->
+    <!--    <td>-->
+    <!--        <a href="/contribute?campaignID=0" type="button" class="btn btn-warning">点击捐赠</a>-->
+    <!--        <button type="button" class="btn btn-warning" onclick="get('0')">爱心人士</button>-->
+    <!--    </td>-->
+    <!--</tr>-->
+    </tbody>
+</table>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">爱心人士</h4>
+            </div>
+
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>地址</th>
+                        <th>数量</th>
+                        <th>时间</th>
+                    </tr>
+                    </thead>
+                    <tbody id="f_tbody">
+                    <!--<tr>-->
+                    <!--<td>0</td>-->
+                    <!--<td>0x......</td>-->
+                    <!--    <td>50</td>-->
+                    <!--    <td>2020-08-08 00:00:00</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script type="text/javascript">
+    $(function () {
+        // 总记录
+        $.ajax({
+            url: 'campaigns',
+            type: 'POST',
+            dataType: 'json',
+            success: function (result) {
+                // 后台返回结果为空
+                if ($.isEmptyObject(result.data)) {
+                    $("#c_tbody").append('<p class="text-danger">暂无众筹</p>');
+                }
+                // 后台返回结果非空
+                else {
+                    var tab = "";
+                    $.each(result.data, function (i, campaign) {
+                        tab += '<tr>';
+                        tab += '<td>' + campaign['id'] + '</td>';
+                        tab += '<td>' + campaign['content'] + '</td>';
+                        tab += '<td>' + campaign['amount'] + ' / ' + campaign['goal'] + '</td>';
+                        tab += '<td>' + campaign['numFunders'] + '</td>';
+                        tab += '<td>' + campaign['beneficiary'] + '</td>';
+                        tab += '<td>' + campaign['time'] + '</td>';
+                        tab += '<td>';
+                        tab += '<a href="/contribute?campaignID=' + campaign['id'] + '" type="button" class="btn btn-warning">点击捐赠</a>';
+                        tab += '<button type="button" class="btn btn-warning" onclick="get(' + campaign['id'] + ')">爱心人士</button>';
+                        tab += '</td>';
+                        tab += '</tr>';
+                    });
+                    $("#c_tbody").html(tab);
+                }
+            }, // success
+        });
+    });
+
+    function get(index) {
+        $('#myModal').modal('show');
+        $.ajax({
+            url: 'funders',
+            type: 'POST',
+            dataType: 'json',
+            data: {campaignID: index},
+            success: function (result) {
+                // 后台返回结果为空
+                if ($.isEmptyObject(result.data)) {
+                    $("#f_tbody").append('<p class="text-danger">暂无众筹</p>');
+                }
+                // 后台返回结果非空
+                else {
+                    var tab = "";
+                    $.each(result.data, function (i, funder) {
+                        tab += '<tr>';
+                        tab += '<td>' + funder['id'] + '</td>';
+                        tab += '<td>' + funder['addr'] + '</td>';
+                        tab += '<td>' + funder['amount'] + '</td>';
+                        tab += '<td>' + funder['time'] + '</td>';
+                        tab += '</tr>';
+                    });
+                    $("#f_tbody").html(tab);
+                }
+            }, // success
+        });
+    }
+</script>
+</body>
+</html>
